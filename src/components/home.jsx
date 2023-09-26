@@ -8,7 +8,7 @@ const Home = () => {
                 <Navbar />
             </header>
             <main>
-                <h1>Home Page</h1>
+                <h1>Experience Geneva</h1>
                 <p>AHHHH</p>
             </main>
             <footer>
