@@ -18,7 +18,7 @@ const Profile = () => {
                         <p className="description"><b>Username:</b></p>
                         <p className="description"><b>Email:</b></p>
                         <p className="description"><b>Password:</b></p>
-                        <p className="description"><b>temp:</b></p>
+                        <p className="description"><b>Trivia High Score:</b></p>
                         <p className="description"><b>temp:</b></p>
                     </div>
 
