@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import '../assets/profile.css';
 const Profile = () => {
     return (
         <div className="Profile">
@@ -8,19 +9,39 @@ const Profile = () => {
                 <Navbar />
             </header>
             <main>
-                <center>
-                <h1>Profile   <button type="button">Edit Profile</button></h1>
-                <p><b>First Name:</b> ((temp))</p>
-                <p><b>Last Name:</b> ((temp))</p>
-                <p><b>Username:</b> ((temp))</p>
-                <p><b>Email:</b> ((temp))</p>
-                <p><b>Password:</b> ((temp)) <button type="button">Reveal</button></p>
-                <p><b>temp:</b> ((temp))</p>
-                <p><b>temp:</b> ((temp))</p>
-                </center>
+                <div className="row">
+                    <div className="cloumn">
+                        <p><b>First Name:</b></p>
+                        <p><b>Last Name:</b></p>
+                        <p><b>Username:</b></p>
+                        <p><b>Email:</b> <p className="user">Temp</p></p>
+                        <p><b>Password:</b><button type="button" className="buttons">Reveal</button></p>
+                        <p><b>temp:</b></p>
+                        <p><b>temp:</b></p>
+                    </div>
+
+                    <div className="cloumn"> 
+                        <h1 className="title">Profile</h1>
+                        <p className="user">Temp</p>
+                        <p className="user">Temp</p>
+                        <p className="user">Temp</p>
+                        <p className="user">Temp</p>
+                        <p className="user">Temp</p>
+                        <p className="user">Temp</p>
+                        <p className="user">Temp</p>
+                        </div>
+
+                    <div className="cloumn">
+                        <button type="button" className="buttons">Edit Profile</button>
+                    </div>
+
+                </div>
+
+
+           
+                
             </main>
             <footer>
-
                 <Footer />
             </footer>
         </div>
