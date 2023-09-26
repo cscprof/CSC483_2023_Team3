@@ -8,39 +8,36 @@ const Profile = () => {
             <header>
                 <Navbar />
             </header>
-            <main>
-                <div className="row">
-                    <div className="cloumn">
-                        <p><b>First Name:</b></p>
-                        <p><b>Last Name:</b></p>
-                        <p><b>Username:</b></p>
-                        <p><b>Email:</b> <p className="user">Temp</p></p>
-                        <p><b>Password:</b><button type="button" className="buttons">Reveal</button></p>
-                        <p><b>temp:</b></p>
-                        <p><b>temp:</b></p>
+            <body>
+            <h1 className="title">Profile</h1>
+            
+                <div className="container">
+                    <div className="column">
+                        <p className="description"><b>First Name:</b></p>
+                        <p className="description"><b>Last Name:</b></p>
+                        <p className="description"><b>Username:</b></p>
+                        <p className="description"><b>Email:</b></p>
+                        <p className="description"><b>Password:</b></p>
+                        <p className="description"><b>temp:</b></p>
+                        <p className="description"><b>temp:</b></p>
                     </div>
 
-                    <div className="cloumn"> 
-                        <h1 className="title">Profile</h1>
-                        <p className="user">Temp</p>
-                        <p className="user">Temp</p>
-                        <p className="user">Temp</p>
-                        <p className="user">Temp</p>
-                        <p className="user">Temp</p>
-                        <p className="user">Temp</p>
-                        <p className="user">Temp</p>
+                    <div className="column"> 
+                        <p className="user">((Temp))</p>
+                        <p className="user">((Temp))</p>
+                        <p className="user">((Temp))</p>
+                        <p className="user">((Temp))</p>
+                        <p className="user">((Temp))</p> 
+                        <p className="user">((Temp))</p>
+                        <p className="user">((Temp))</p>
                         </div>
 
-                    <div className="cloumn">
-                        <button type="button" className="buttons">Edit Profile</button>
+                    <div className="column">
+                    <button type="button" className="buttons">Edit Profile</button>
                     </div>
 
                 </div>
-
-
-           
-                
-            </main>
+            </body>
             <footer>
                 <Footer />
             </footer>
