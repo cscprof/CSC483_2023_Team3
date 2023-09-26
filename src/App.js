@@ -13,6 +13,8 @@ import OldMain from "./components/oldMain";
 import Trivia from "./components/trivia";
 import Upload from "./components/upload"
 
+
+
 function App() {
   return (
     <Router>
@@ -33,7 +35,10 @@ function App() {
 
       </Routes>
     </Router>
+
+    
   );
+
 }
 
 export default App;

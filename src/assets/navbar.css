@@ -31,3 +31,11 @@ ul {
     color: black !important;
     background-color: gold;
 }
+
+.buttonImg {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+}

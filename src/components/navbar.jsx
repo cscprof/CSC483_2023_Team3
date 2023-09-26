@@ -23,6 +23,9 @@ const Navbar = () => {
                             <NavLink to="/profile">Profile</NavLink>
                         </li>
                     </ul>
+                    <input className="buttonImg" type="Image" src="" height="50" width="50" name="profileIcon"></input>
+                   
+
                 </div>
             </div>
         </nav >
