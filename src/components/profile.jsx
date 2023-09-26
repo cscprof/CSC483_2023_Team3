@@ -1,9 +1,18 @@
 import React from "react";
-
+import Navbar from "./navbar";
+import Footer from "./footer";
 const Profile = () => {
     return (
-        <div>
-            <h1>Profile</h1>
+        <div className="Profile">
+            <header>
+                <Navbar />
+            </header>
+            <main>
+                <h1>Profile</h1>
+            </main>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     );
 };

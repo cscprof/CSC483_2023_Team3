@@ -1,9 +1,18 @@
 import React from "react";
-
+import Navbar from "./navbar";
+import Footer from "./footer";
 const Events = () => {
     return (
-        <div>
-            <h1>Events</h1>
+        <div className="Events">
+            <header>
+                <Navbar />
+            </header>
+            <main>
+                <h1>events</h1>
+            </main>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     );
 };

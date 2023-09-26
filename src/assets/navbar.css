@@ -1,0 +1,33 @@
+.navbar {
+    margin: 0;
+    background-color: #353434;
+    display: flex;
+    height: 5rem;
+    text-decoration: none;
+    justify-content: left;
+
+}
+
+ul {
+    padding-left: -1rem;
+    list-style: none;
+}
+
+.navList li {
+    display: inline-block;
+    margin-right: 3rem;
+    margin-top: .75rem;
+    color: white;
+    font-size: larger;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navList li a:hover {
+    text-decoration: none;
+    color: black !important;
+    background-color: gold;
+}

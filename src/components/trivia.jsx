@@ -1,9 +1,18 @@
 import React from "react";
-
+import Navbar from "./navbar";
+import Footer from "./footer";
 const Trivia = () => {
     return (
-        <div>
-            <h1>Trivia</h1>
+        <div className="Trivia">
+            <header>
+                <Navbar />
+            </header>
+            <main>
+                <h1>Trivia</h1>
+            </main>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     );
 };

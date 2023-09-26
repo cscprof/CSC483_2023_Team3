@@ -9,14 +9,28 @@ import Home from "./components/home";
 import Help from "./components/help";
 import Events from "./components/events";
 import Profile from "./components/profile";
-import oldMain from "./components/oldMain";
+import OldMain from "./components/oldMain";
 import Trivia from "./components/trivia";
+import Upload from "./components/upload"
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/help' element={<Help />} />
+
+        <Route path='/events' element={<Events />} />
+
+        <Route path='/profile' element={<Profile />} />
+
+        <Route path='/oldmain' element={<OldMain />} />
+
+        <Route path='/trivia' element={<Trivia />} />
+
+        <Route path='/upload' element={<Upload />} />
+
+
       </Routes>
     </Router>
   );
