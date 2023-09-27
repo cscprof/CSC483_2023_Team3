@@ -20,6 +20,9 @@ const Navbar = () => {
                             <NavLink to="/upload">Upload</NavLink>
                         </li>
                         <li>
+                            <NavLink to="/reviews">Reviews</NavLink>
+                        </li>
+                        <li>
                             <NavLink to="/profile">Profile</NavLink>
                         </li>
                     </ul>
