@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 import '../assets/navbar.css';
+import Logo from '../assets/images/genevalogo.svg'
 
 const Navbar = () => {
     return (
@@ -8,6 +9,9 @@ const Navbar = () => {
             <div className="container">
                 <div className="nav-elements">
                     <ul className="navList">
+                        <li>
+                            <img src={Logo} className="genLogo" alt="geneva logo" />
+                        </li>
                         <li>
                             <NavLink to="/">Home</NavLink>
                         </li>
