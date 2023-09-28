@@ -22,9 +22,7 @@ const Navbar = () => {
                         <li>
                             <NavLink to="/upload">Upload</NavLink>
                         </li>
-                        <li>
-                            <NavLink to="/profile">Profile</NavLink>
-                        </li>
+                        
                     </ul>
                     <input id="myBtn" className="buttonImg" type="Image" src="../images.profile-icon.png" height="50" width="50" name="Icon"></input>
                     <div id="myModal" class="modal">
@@ -32,6 +30,7 @@ const Navbar = () => {
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <p>Test Content</p>
+                            <NavLink to="/profile">Profile</NavLink>
                         </div>
 
                     </div>
