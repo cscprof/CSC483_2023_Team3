@@ -11,7 +11,7 @@ import Events from "./components/events";
 import Profile from "./components/profile";
 import OldMain from "./components/oldMain";
 import Trivia from "./components/trivia";
-import Upload from "./components/upload"
+import Upload from "./components/upload";
 
 
 
