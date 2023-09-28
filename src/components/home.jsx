@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./navbar.jsx";
 import Footer from "./footer.jsx";
 import '../assets/home.css';
+
 const Home = () => {
     return (
         <div className="Home">
@@ -9,6 +10,7 @@ const Home = () => {
                 <Navbar />
                 <div className="jumbo">
                     <h1>EXPERIENCE Geneva</h1>
+
                 </div>
             </header>
             <main>
