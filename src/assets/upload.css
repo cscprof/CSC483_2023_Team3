@@ -1,0 +1,12 @@
+.jumbo {
+    text-align: center;
+    background-color: rgb(255, 192, 33);
+    padding: 1rem 0rem 1rem 0;
+    font-size: 2.25rem;
+    width: 100%;
+    color: white;
+}
+
+.uploadFields {
+    background-color: #ffffff;
+}
