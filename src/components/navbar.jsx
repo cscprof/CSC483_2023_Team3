@@ -1,5 +1,7 @@
-import { NavLink } from 'react-router-dom'
-import '../assets/navbar.css'
+import { NavLink } from 'react-router-dom';
+import React from 'react';
+import '../assets/navbar.css';
+import Logo from '../assets/images/genevalogo.svg'
 import "react-modal"
 import Logo from '../assets/images/profile-icon.png'
 
@@ -10,6 +12,9 @@ const Navbar = () => {
             <div className="container">
                 <div className="nav-elements">
                     <ul className="navList">
+                        <li>
+                            <img src={Logo} className="genLogo" alt="geneva logo" />
+                        </li>
                         <li>
                             <NavLink to="/">Home</NavLink>
                         </li>
@@ -22,7 +27,9 @@ const Navbar = () => {
                         <li>
                             <NavLink to="/upload">Upload</NavLink>
                         </li>
-                        
+                        <li>
+                            <NavLink to="/profile">Profile</NavLink>
+                        </li>
                     </ul>
                     <input id="myBtn" className="buttonImg" type="Image" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" height="50" width="50" name="Icon"></input>
                     <div id="myModal" class="modal">
