@@ -1,0 +1,46 @@
+.jumbo {
+    text-align: center;
+    background-color: rgb(255, 192, 33);
+    padding: 1rem 0rem 1rem 0;
+    font-size: 2.25rem;
+    width: 100%;
+    color: white;
+}
+
+.map {
+
+    background-image: url('./images/map.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 750px;
+    width: 100%;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background-size: contain;
+        min-height: max-content;
+
+    }
+}
+
+.subtitle {
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: #353434;
+    padding: .2rem 0rem .2rem 0rem;
+    width: 100%;
+}
+
+.map-container {
+    position: relative;
+    height: 100%;
+
+}
+
+.oldMain-button {
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}

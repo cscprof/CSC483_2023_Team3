@@ -12,8 +12,12 @@ import Profile from "./components/profile";
 import OldMain from "./components/oldMain";
 import Trivia from "./components/trivia";
 import Upload from "./components/upload";
+ HEAD
 
 
+
+import Reviews from "./components/reviews";
+ main
 
 function App() {
   return (
@@ -32,6 +36,7 @@ function App() {
 
         <Route path='/upload' element={<Upload />} />
 
+        <Route path='/reviews' element={<Reviews />} />
 
       </Routes>
     </Router>
