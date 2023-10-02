@@ -12,7 +12,7 @@ const Trivia = () => {
                     <h1>EXPERIENCE Geneva</h1>
                 </div>
                 <div className="subtitle">
-                    <h2>Upload</h2>
+                    <h2>Trivia</h2>
                 </div>
             </header>
             

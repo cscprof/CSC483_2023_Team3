@@ -2,14 +2,23 @@ import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import '../assets/profile.css';
+import Logo from "../assets/images/profile-icon.png"
 const Profile = () => {
     return (
         <div className="Profile">
-            <header>
-                <Navbar />
+          <header>
+            <Navbar />
+                <div className="jumbo">
+                    <h1>EXPERIENCE Geneva</h1>
+                </div>
+                <div className="subtitle">
+                    <h2>Profile</h2>
+                </div>
             </header>
             <body>
-            <h1 className="title">Profile</h1>
+            <div className="profileImage">
+            <img src={Logo}></img>
+            </div>
             
                 <div className="container">
                     <div className="column">
