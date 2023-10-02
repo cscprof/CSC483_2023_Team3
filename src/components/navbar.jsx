@@ -28,7 +28,7 @@ const Navbar = () => {
                             <NavLink to="/upload">Upload</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/profile">Profile</NavLink>
+                            <NavLink to="/reviews">Reviews</NavLink>
                         </li>
                     </ul>
                     <input id="myBtn" className="buttonImg" type="Image" src={Logo1} height="50" width="50" name="Icon"></input>
