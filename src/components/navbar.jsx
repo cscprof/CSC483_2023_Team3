@@ -24,13 +24,19 @@ const Navbar = () => {
                         </li>
                         
                     </ul>
-                    <input id="myBtn" className="buttonImg" type="Image" src="../images.profile-icon.png" height="50" width="50" name="Icon"></input>
+                    <input id="myBtn" className="buttonImg" type="Image" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" height="50" width="50" name="Icon"></input>
                     <div id="myModal" class="modal">
 
                         <div class="modal-content">
                             <span class="close">&times;</span>
-                            <p>Test Content</p>
-                            <NavLink to="/profile">Profile</NavLink>
+
+                            <h3>Login</h3>
+                            <p>Username:</p><input></input>
+                            <p>Password:</p><input></input>
+                            <button>Login</button>
+                            <button>Create Account</button>
+
+                            <NavLink to="/profile">Go To Profile (temporary)</NavLink>
                         </div>
 
                     </div>
