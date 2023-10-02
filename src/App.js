@@ -1,4 +1,4 @@
-
+import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -12,12 +12,7 @@ import Profile from "./components/profile";
 import OldMain from "./components/oldMain";
 import Trivia from "./components/trivia";
 import Upload from "./components/upload";
- HEAD
-
-
-
 import Reviews from "./components/reviews";
- main
 
 function App() {
   return (
@@ -40,10 +35,7 @@ function App() {
 
       </Routes>
     </Router>
-
-    
   );
-
 }
 
 export default App;
