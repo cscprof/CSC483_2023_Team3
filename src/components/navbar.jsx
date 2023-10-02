@@ -3,7 +3,7 @@ import React from 'react';
 import '../assets/navbar.css';
 import Logo from '../assets/images/genevalogo.svg'
 import "react-modal"
-import Logo from '../assets/images/profile-icon.png'
+import Logo1 from '../assets/images/profile-icon.png'
 
 const Navbar = () => {
 
@@ -31,7 +31,7 @@ const Navbar = () => {
                             <NavLink to="/profile">Profile</NavLink>
                         </li>
                     </ul>
-                    <input id="myBtn" className="buttonImg" type="Image" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" height="50" width="50" name="Icon"></input>
+                    <input id="myBtn" className="buttonImg" type="Image" src={Logo1} height="50" width="50" name="Icon"></input>
                     <div id="myModal" class="modal">
 
                         <div class="modal-content">
