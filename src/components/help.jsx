@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import '../assets/help.css';
 
 const Help = () => {
     return (
@@ -8,6 +9,8 @@ const Help = () => {
             <header>
                 <Navbar />
             </header>
+            <h1> Need help?</h1>
+            
             <main>
                 <h1>help</h1>
             </main>
