@@ -9,10 +9,19 @@ const Help = () => {
             <header>
                 <Navbar />
             </header>
-            <h1> Need help?</h1>
-            
+            <div className="top">
+                <h1> Need help?</h1>
+                </div>
             <main>
-                <h1>help</h1>
+                <div className="FAQ">
+                <h1>FAQ!</h1>
+                    <b> Question 1?</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis risusLorem ipsum dolor sit amet, consectet</p>
+                    <b> Question 2?</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis risusLorem ipsum dolor sit amet, consectet</p>
+                    <b> Question 3?</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis risusLorem ipsum dolor sit amet, consectet</p>
+                </div>
             </main>
             <footer>
                 <Footer />

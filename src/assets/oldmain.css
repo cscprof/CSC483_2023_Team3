@@ -7,8 +7,22 @@
   color: white;
   }
 
-.secondpart{
-    background-color: #FDEA6D;
+  .firstpart {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0rem 1rem 0;
+    font-size: 1.50rem;
+    width: 100%;
+    color: rgb(0, 0, 0);
+  }
+
+.secondpart {
+  text-align: center;
+  background-color: rgb(255, 192, 33);
+  padding: 1rem 0rem 1rem 0;
+  font-size: 1.50rem;
+  width: 100%;
+  color: white;
 }
 
 .button{
