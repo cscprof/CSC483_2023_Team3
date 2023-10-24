@@ -1,11 +1,31 @@
 import { NavLink } from 'react-router-dom';
-import React from 'react';
+import React, { useEffect } from 'react'; // Import useEffect
 import '../assets/navbar.css';
-import Logo from '../assets/images/genevalogo.svg'
-import "react-modal"
-import Logo1 from '../assets/images/profile-icon.png'
+import Logo from '../assets/images/genevalogo.svg';
+import Logo1 from '../assets/images/profile-icon.png';
 
 const Navbar = () => {
+    useEffect(() => {
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.querySelector(".close");
+
+        if (btn && modal && span) {
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    }, []);
 
     return (
         <nav className="navbar">
@@ -32,53 +52,21 @@ const Navbar = () => {
                         </li>
                     </ul>
                     <input id="myBtn" className="buttonImg" type="Image" src={Logo1} height="50" width="50" name="Icon"></input>
-                    <div id="myModal" class="modal">
-
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-
+                    <div id="myModal" className="modal">
+                        <div className="modal-content">
+                            <span className="close">&times;</span>
                             <h3>Login</h3>
                             <p>Username:</p><input></input>
                             <p>Password:</p><input></input>
                             <button>Login</button>
                             <button>Create Account</button>
-
                             <NavLink to="/profile">Go To Profile (temporary)</NavLink>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-        </nav >
-    )
-    
+        </nav>
+    );
 }
 
-
-
-
-
-export default Navbar
-
-window.onload = function(){ 
-    
-
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-};
+export default Navbar;
