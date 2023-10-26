@@ -13,8 +13,10 @@ import OldMain from "./components/oldMain";
 import Trivia from "./components/trivia";
 import Upload from "./components/upload";
 import Reviews from "./components/reviews";
+import Register from './components/Register';
 
-function App() {
+
+const App = () => {
   return (
     <Router>
       <Routes>
@@ -32,10 +34,11 @@ function App() {
         <Route path='/upload' element={<Upload />} />
 
         <Route path='/reviews' element={<Reviews />} />
-
+        <Route path='/register' component={<Register />} />
       </Routes>
     </Router>
   );
-}
+};
+
 
 export default App;
