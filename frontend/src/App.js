@@ -13,7 +13,8 @@ import OldMain from "./components/oldMain";
 import Trivia from "./components/trivia";
 import Upload from "./components/upload";
 import Reviews from "./components/reviews";
-import Register from './components/Register';
+import Register from "./components/register.jsx";
+
 
 
 const App = () => {
@@ -34,7 +35,8 @@ const App = () => {
         <Route path='/upload' element={<Upload />} />
 
         <Route path='/reviews' element={<Reviews />} />
-        <Route path='/register' component={<Register />} />
+        <Route path='/register' element={<Register />} />
+
       </Routes>
     </Router>
   );
