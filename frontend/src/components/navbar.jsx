@@ -10,32 +10,29 @@ const Navbar = () => {
     const [password, setPassword] = useState('');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const axiosInstance = axios.create({
-        baseURL: 'http://127.0.0.1:8000',  // Use the URL of your Django server
+        baseURL: 'http://127.0.0.1:8000',
     });
 
     const handleLogin = () => {
         if (username && password) {
-            // Define the data to be sent in the POST request
+
             const data = {
                 username: username,
                 password: password,
             };
 
-            // Send the POST request to the Django API
+
             axiosInstance.post('http://127.0.0.1:8000/api/login/', data)
                 .then(response => {
-                    // Handle successful authentication
+
                     console.log(response.data);
 
-                    // Assuming your Django API returns a token on successful login
-                    // You can save this token in local storage or a cookie for future requests
+
                     localStorage.setItem('token', response.data.token);
 
-                    // Update the state to reflect that the user is logged in
                     setIsLoggedIn(true);
                 })
                 .catch(error => {
-                    // Handle authentication failure
                     console.error(error);
                 });
         }
