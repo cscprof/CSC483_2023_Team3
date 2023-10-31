@@ -13,7 +13,6 @@ import OldMain from './components/oldMain.jsx';
 import Trivia from "./components/trivia";
 import Upload from "./components/upload";
 import Reviews from "./components/reviews";
-<<<<<<< HEAD
 import Alex from "./components/Buildings/Alex";
 import Dorms from "./components/Buildings/Dorms";
 import Library from './components/Buildings/Library';
@@ -24,9 +23,7 @@ import Rapp from "./components/Buildings/Rapp";
 import SandE from "./components/Buildings/SandE";
 import Sports from "./components/Buildings/Sports";
 import Studentcenter from "./components/Buildings/Studentcenter";
-=======
-import Register from "./components/register.jsx";
->>>>>>> 1c2a6437050ff15de978fa41f660693da3a86553
+import Register from './components/Register';
 
 
 
@@ -49,6 +46,7 @@ const App = () => {
 
         <Route path='/reviews' element={<Reviews />} />
         <Route path='/register' element={<Register />} />
+
 
         <Route path='/Alex' element={<Alex />} />
 
