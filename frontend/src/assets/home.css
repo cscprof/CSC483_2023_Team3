@@ -44,3 +44,129 @@
     left: 40%;
     transform: translate(-50%, -50%);
 }
+
+.library-button {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.alex-button {
+    position: absolute;
+    top: 45%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
+.pierce-button {
+    position: absolute;
+    top: 25%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+
+.memorial-button {
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+}
+
+.clarke-button {
+    position: absolute;
+    top: 38%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+}
+
+.mckee-button {
+    position: absolute;
+    top: 24%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+}
+
+.apartments-button {
+    position: absolute;
+    top: 86%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.wood-button {
+    position: absolute;
+    top: 41%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.sande-button {
+    position: absolute;
+    top: 34%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.studentcenter-button {
+    position: absolute;
+    top: 26%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.methany-button {
+    position: absolute;
+    top: 42%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+}
+
+.softball-button {
+    position: absolute;
+    top: 61%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+}
+
+.track-button {
+    position: absolute;
+    top: 63%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+}
+
+.football-button {
+    position: absolute;
+    top: 52%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+}
+
+.baseball-button {
+    position: absolute;
+    top: 68%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+
+.rapp-button {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.other-button {
+    position: absolute;
+    top: 48%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.music-button {
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
