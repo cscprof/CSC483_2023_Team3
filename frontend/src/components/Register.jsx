@@ -19,8 +19,14 @@ const Register = () => {
 
   const handleRegistration = async (e) => {
     e.preventDefault();
+
+    const registrationData = {
+      username: formData.username,
+      password: formData.password,
+    };
+
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/login/', formData);
+      const response = await axios.post('http://127.0.0.1:8000/api/register/', registrationData);
       console.log('Registration successful', response.data);
 
     } catch (error) {
