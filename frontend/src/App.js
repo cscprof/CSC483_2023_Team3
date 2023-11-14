@@ -13,7 +13,7 @@ import OldMain from "./components/oldMain";
 import Trivia from "./components/trivia";
 import Upload from "./components/upload";
 import Reviews from "./components/reviews";
-import Register from "./components/Register.jsx";
+
 
 
 
