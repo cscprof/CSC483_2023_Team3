@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+#stupid venv file
+/backend/venv
+
 # production
 /build
 
