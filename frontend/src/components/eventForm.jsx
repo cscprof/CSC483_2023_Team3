@@ -1,79 +1,86 @@
 import React, { Component } from 'react';
 import "../assets/eventForm.css";
+import { useState } from 'react';
+import axios from 'axios';
 
-class EventForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: '',
-      date: '',
-      description: '',
-      location: '',
-    };
-  }
+const EventForm = () => {
+  const [formData, setFormData] = useState({
+    title: '',
+    date: '',
+    description: '',
+    location: '',
+  });
 
-  handleInputChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
+  const handleInputChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
   };
-
-  handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    console.log('Form data:', this.state);
+    const eventData = {
+      title: formData.title,
+      date: formData.date,
+      description: formData.description,
+      location: formData.location,
+    };
+
+    try {
+      const response = await axios.post('http://127.0.0.1:8000/api/makeEvent/', eventData);
+      console.log('Event Created', response.data);
+
+    } catch (error) {
+      console.error('Event Creation failed', error);
+    }
   };
 
-  render() {
-    return (
-      <div className='eventForm'>
-        <h2>Upload Event</h2>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="title">Event Title:</label>
+  return (
+    <div className='eventForm'>
+      <h2>Upload Event</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Title:</label>
           <input
             type="text"
-            id="title"
             name="title"
-            value={this.state.title}
-            onChange={this.handleInputChange}
-            required
-          /><br /><br />
-
-          <label htmlFor="date">Event Date:</label>
+            value={formData.username}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div>
+          <label>Date:</label>
           <input
             type="date"
-            id="date"
             name="date"
-            value={this.state.date}
-            onChange={this.handleInputChange}
-            required
-          /><br /><br />
-
-          <label htmlFor="description">Event Description:</label><br />
-          <textarea
-            id="description"
-            name="description"
-            value={this.state.description}
-            onChange={this.handleInputChange}
-            rows="4"
-            cols="50"
-            required
-          ></textarea><br /><br />
-
-          <label htmlFor="location">Event Location:</label>
+            value={formData.date}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div>
+          <label>Description:</label>
           <input
-            type="text"
-            id="location"
+            type="description"
+            name="description"
+            value={formData.description}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div>
+          <label>Location:</label>
+          <input
+            type="location"
             name="location"
-            value={this.state.location}
-            onChange={this.handleInputChange}
-            required
-          /><br /><br />
-
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    );
-  }
+            value={formData.location}
+            onChange={handleInputChange}
+          />
+        </div>
+        <button type="submit">Submit Event</button>
+      </form>
+    </div>
+  );
 }
+
 
 export default EventForm;
