@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
-import "../assets/eventForm.css";
-import { useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+import '../assets/eventForm.css';
 
 const EventForm = () => {
-  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     title: '',
     date: '',
     description: '',
     location: '',
   });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleInputChange = (event) => {
     setFormData({
@@ -18,6 +17,7 @@ const EventForm = () => {
       [event.target.name]: event.target.value,
     });
   };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -32,13 +32,13 @@ const EventForm = () => {
       const response = await axios.post('http://127.0.0.1:8000/api/makeEvent/', eventData);
       console.log('Event Created', response.data);
       setSubmitted(true);
+
       setFormData({
         title: '',
         date: '',
         description: '',
         location: '',
       });
-
     } catch (error) {
       console.error('Event Creation failed', error);
     }
@@ -89,7 +89,7 @@ const EventForm = () => {
       </form>
     </div>
   );
-}
-
+};
 
 export default EventForm;
+
