@@ -4,6 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 const EventForm = () => {
+  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     title: '',
     date: '',
@@ -30,6 +31,13 @@ const EventForm = () => {
     try {
       const response = await axios.post('http://127.0.0.1:8000/api/makeEvent/', eventData);
       console.log('Event Created', response.data);
+      setSubmitted(true);
+      setFormData({
+        title: '',
+        date: '',
+        description: '',
+        location: '',
+      });
 
     } catch (error) {
       console.error('Event Creation failed', error);
@@ -39,13 +47,14 @@ const EventForm = () => {
   return (
     <div className='eventForm'>
       <h2>Upload Event</h2>
+      {submitted && <div className="success-message">Event submitted successfully!</div>}
       <form onSubmit={handleSubmit}>
         <div>
           <label>Title:</label>
           <input
             type="text"
             name="title"
-            value={formData.username}
+            value={formData.title}
             onChange={handleInputChange}
           />
         </div>
@@ -61,7 +70,7 @@ const EventForm = () => {
         <div>
           <label>Description:</label>
           <input
-            type="description"
+            type="text"
             name="description"
             value={formData.description}
             onChange={handleInputChange}
@@ -70,7 +79,7 @@ const EventForm = () => {
         <div>
           <label>Location:</label>
           <input
-            type="location"
+            type="text"
             name="location"
             value={formData.location}
             onChange={handleInputChange}

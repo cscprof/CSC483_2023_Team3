@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status 
 from django.contrib.auth.models import User
 from .models import Events
+from django.http import HttpRequest
 
 
 @api_view(['POST'])
@@ -39,3 +40,13 @@ def make_event(request):
     Events.objects.create(title=title, date=date, description=description, location=location)
 
     return Response({'message': 'Event successfully'})
+
+@api_view(['GET'])
+def get_events(request: HttpRequest):
+    try:
+        events = Events.objects.all()
+        serialized_events = [{'title': event.title, 'group': event.group, 'description': event.description, 'date': event.date, 'location': event.location} for event in events]
+        return Response(serialized_events)
+    except Exception as e:
+        print(f"Error in get_events view: {e}")
+        return Response({'error': 'Internal Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

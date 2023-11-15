@@ -10,3 +10,5 @@ class Events(models.Model):
       date = models.CharField(max_length=24)
       description = models.CharField(max_length=250)
       location = models.CharField(max_length=64)
+      def __str__(self):
+        return self.title
