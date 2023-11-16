@@ -9,7 +9,7 @@ import Home from "./components/home";
 import Help from "./components/help";
 import Events from "./components/events";
 import Profile from "./components/profile";
-import OldMain from './components/oldMain.jsx';
+import OldMain from './components/Buildings/oldMain.jsx';
 import Trivia from "./components/trivia";
 import Upload from "./components/upload";
 import Reviews from "./components/reviews";
@@ -24,6 +24,7 @@ import SandE from "./components/Buildings/SandE";
 import Sports from "./components/Buildings/Sports";
 import Studentcenter from "./components/Buildings/Studentcenter";
 import Register from './components/Register';
+import Make from './components/make.jsx'
 
 
 
@@ -46,6 +47,7 @@ const App = () => {
 
         <Route path='/reviews' element={<Reviews />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/make' element={<Make />} />
 
 
         <Route path='/Alex' element={<Alex />} />
@@ -67,7 +69,6 @@ const App = () => {
         <Route path='/Sports' element={<Sports />} />
 
         <Route path='/Studentcenter' element={<Studentcenter />} />
-
       </Routes>
     </Router>
   );
