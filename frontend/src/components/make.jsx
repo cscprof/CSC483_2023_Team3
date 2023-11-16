@@ -52,7 +52,7 @@ const Make = () => {
                 q10: 0,
                 comments: "",
             });
-
+            //this is a test thingy
         } catch (error) {
             console.error("Error submitting review:", error);
         }
