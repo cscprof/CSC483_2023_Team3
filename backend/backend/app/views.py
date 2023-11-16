@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status 
 from django.contrib.auth.models import User
-from .models import Events
+from .models import Events, Reviews
 from django.http import HttpRequest
 
 
@@ -18,7 +18,7 @@ def custom_login(request):
         login(request, user)  
         return Response({'message': 'Login successful'})
     else:
-        return Response({'message': 'Login failed'}, status=status.HTTP_UNAUTHORIZED)
+        return Response({'message': 'Login failed'}, status=status.HTTP_401_UNAUTHORIZED)
     
 @api_view(['POST'])
 def register_user(request):
@@ -49,4 +49,30 @@ def get_events(request: HttpRequest):
         return Response(serialized_events)
     except Exception as e:
         print(f"Error in get_events view: {e}")
+        return Response({'error': 'Internal Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    
+@api_view(['POST'])
+def submit_review(request):
+    try:
+   
+        data = request.data
+        review = Reviews(
+            title=data.get('title'),
+            date=data.get('date'),
+            q1=data.get('q1'),
+            q2=data.get('q2'),
+            q3=data.get('q3'),
+            q4=data.get('q4'),
+            q5=data.get('q5'),
+            q6=data.get('q6'),
+            q7=data.get('q7'),
+            q8=data.get('q8'),
+            q9=data.get('q9'),
+            q10=data.get('q10'),
+            comments=data.get('comments')
+        )
+        review.save()
+        return Response({'message': 'Review submitted successfully'})
+    except Exception as e:
+        print(f"Error in submit_review view: {e}")
         return Response({'error': 'Internal Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

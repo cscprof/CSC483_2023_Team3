@@ -13,34 +13,30 @@ const Navbar = () => {
         baseURL: 'http://127.0.0.1:8000',
     });
 
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            setIsLoggedIn(true);
+        }
+    }, []);
+
     const handleLogin = () => {
         if (username && password) {
-
             const data = {
                 username: username,
                 password: password,
             };
 
-
             axiosInstance.post('http://127.0.0.1:8000/api/login/', data)
                 .then(response => {
-
                     console.log(response.data);
-
-
                     localStorage.setItem('token', response.data.token);
-
                     setIsLoggedIn(true);
                 })
                 .catch(error => {
                     console.error(error);
                 });
         }
-    };
-    const handleLogout = () => {
-        setUsername('');
-        setPassword('');
-        setIsLoggedIn(false);
     };
 
     useEffect(() => {
@@ -58,13 +54,19 @@ const Navbar = () => {
             }
 
             window.onclick = function (event) {
-                if (event.target == modal) {
+                if (event.target === modal) {
                     modal.style.display = "none";
                 }
             }
         }
     }, []);
 
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        setUsername('');
+        setPassword('');
+        setIsLoggedIn(false);
+    };
     return (
         <nav className="navbar">
             <div className="container">
