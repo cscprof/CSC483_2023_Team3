@@ -10,6 +10,11 @@
 
 #stupid venv file
 /backend/venv
+# another stupid file
+backend/backend/app/__pycache__/
+
+#Yet another
+ backend/backend/backend/__pycache__/
 
 # production
 /build
