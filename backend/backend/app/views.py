@@ -45,7 +45,7 @@ def make_event(request):
 def get_events(request: HttpRequest):
     try:
         events = Events.objects.all()
-        serialized_events = [{'title': event.title, 'group': event.group, 'description': event.description, 'date': event.date, 'location': event.location} for event in events]
+        serialized_events = [{'title': event.title, 'description': event.description, 'date': event.date, 'location': event.location} for event in events]
         return Response(serialized_events)
     except Exception as e:
         print(f"Error in get_events view: {e}")

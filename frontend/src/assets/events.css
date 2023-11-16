@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400&display=swap');
+
 .jumbo {
     text-align: center;
     background-color: rgb(255, 192, 33);
     padding: 1rem 0rem 1rem 0;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.25rem;
     width: 100%;
 }
@@ -15,7 +18,7 @@
 }
 
 .tableCont {
-    background: whitesmoke;
+    background: rgb(212, 212, 212);
     height: 750px;
 
 }
