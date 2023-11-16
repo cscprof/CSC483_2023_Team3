@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Table from "./table";
 import "../assets/events.css";
+
 const Events = () => {
     return (
         <div className="Events">
