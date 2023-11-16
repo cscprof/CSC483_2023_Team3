@@ -76,3 +76,30 @@ def submit_review(request):
     except Exception as e:
         print(f"Error in submit_review view: {e}")
         return Response({'error': 'Internal Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    
+@api_view(['GET'])
+def get_reviews(request):
+    try:
+        reviews = Reviews.objects.all()
+        serialized_reviews = [
+            {
+                'title': review.title,
+                'date': review.date,
+                'q1': review.q1,
+                'q2': review.q2,
+                'q3': review.q3,
+                'q4': review.q4,
+                'q5': review.q5,
+                'q6': review.q6,
+                'q7': review.q7,
+                'q8': review.q8,
+                'q9': review.q9,
+                'q10': review.q10,
+                'comments': review.comments
+            }
+            for review in reviews
+        ]
+        return Response(serialized_reviews)
+    except Exception as e:
+        print(f"Error in get_reviews view: {e}")
+        return Response({'error': 'Internal Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
