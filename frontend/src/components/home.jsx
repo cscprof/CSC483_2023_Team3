@@ -31,10 +31,18 @@ const Home = () => {
                         </NavLink>
                         <NavLink to="/Dorms">
                             <button className="pierce-button">Pierce</button>
-                            <button className="memorial-button">Memorial</button>
-                            <button className="clarke-button">Clarke</button>
-                            <button className="mckee-button">McKee</button>
+                        </NavLink>
+                        <NavLink to="/Dorms">
                             <button className="apartments-button">Apartments</button>
+                        </NavLink>
+                        <NavLink to="/Dorms">
+                            <button className="clarke-button">Clarke</button>
+                        </NavLink>
+                        <NavLink to="/Dorms">
+                            <button className="memorial-button">Memorial</button>
+                        </NavLink>
+                        <NavLink to="/Dorms">
+                            <button className="mckee-button">McKee</button>
                         </NavLink>
                         <NavLink to="/Northwood">
                             <button className="wood-button">Northwood</button>
@@ -45,11 +53,19 @@ const Home = () => {
                         <NavLink to="Studentcenter">
                             <button className="studentcenter-button">Student <br></br> center</button>
                         </NavLink>
-                        <NavLink t0="/Sports">
+                        <NavLink to="/Sports">
                             <button className="methany-button">Methany</button>
+                        </NavLink>
+                        <NavLink to="/Sports">
                             <button className="baseball-button">Baseball</button>
+                        </NavLink>
+                        <NavLink to="/Sports">
                             <button className="softball-button">Softball</button>
+                        </NavLink>
+                        <NavLink to="/Sports">
                             <button className="football-button">Football</button>
+                        </NavLink>
+                        <NavLink to="/Sports">
                             <button className="track-button">Track & Field</button>
                         </NavLink>
                         <NavLink to="/Rapp">
