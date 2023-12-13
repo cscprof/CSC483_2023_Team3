@@ -94,7 +94,7 @@ const Navbar = () => {
                     <input id="myBtn" className="buttonImg" type="Image" src={Logo1} height="50" width="50" name="Icon"></input>
                     <div id="myModal" className="modal">
                         <div className="modal-content">
-                            <span className="close" onClick={() => handleLogout()}>&times;</span>
+                            <span className="close">&times;</span>
                             {isLoggedIn ? (
                                 <div>
                                     <h3>Welcome, {username}!</h3>
