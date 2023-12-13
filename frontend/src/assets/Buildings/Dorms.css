@@ -1,0 +1,41 @@
+.dcentered { 
+    text-align: center;
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/geneva-college-old-main-university-icons.jpg);
+    padding: 1rem 0rem 1rem 0;
+    font-size: 2.25rem;
+    width: 100%;
+    color: white;
+    }
+  
+   .dfirstpart {
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      padding: 1rem 0rem 1rem 0;
+      font-size: 1.50rem;
+      width: 100%;
+      color: rgb(0, 0, 0);
+   }
+   
+   img {
+    float: left;
+    margin-right: 20px;
+    width: 30%;
+    height: 30%;
+  }
+  
+  .text-container {
+    margin-left: 20px;
+  }
+  
+  .dsecondpart {
+    text-align: center;
+    background-color: rgb(255, 192, 33);
+    padding: 1rem 0rem 1rem 0;
+    font-size: 1.50rem;
+    width: 100%;
+    color: white;
+  }
+  
+  .dbutton{
+    text-align: right;
+  }
