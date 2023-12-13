@@ -11,6 +11,18 @@ class UploadForm extends Component {
         };
     }
 
+    handleInputChange = (event) => {
+        this.setState({
+            selectedBuilding: event.target.value,
+        });
+    };
+
+    handleFileChange = (event) => {
+        this.setState({
+            file: event.target.files[0],
+        });
+    };
+
     handleSubmit = (event) => {
         event.preventDefault();
 
@@ -36,7 +48,6 @@ class UploadForm extends Component {
                         onChange={this.handleInputChange}
                         required
                     >
-                        <option value="">Select a Building</option>
                         <option value="oldMain">Old Main</option>
                         <option value="s&e">S&E</option>
                         <option value="northwood">Northwood</option>
@@ -48,14 +59,15 @@ class UploadForm extends Component {
                         id="description"
                         name="description"
                         value={this.state.description}
-                        onChange={this.handleInputChange}
+                        onChange={(event) => this.setState({ description: event.target.value })}
                         rows="4"
                         cols="50"
                         required
                     ></textarea>
                     <br />
 
-                    <center><label htmlFor="image"></label>
+                    <center>
+                        <label htmlFor="image"></label>
                         <input
                             type="file"
                             id="image"
@@ -63,7 +75,8 @@ class UploadForm extends Component {
                             accept="image/*"
                             onChange={this.handleFileChange}
                             required
-                        /></center>
+                        />
+                    </center>
                     <br /> <br />
 
                     <button type="submit">Submit</button>
@@ -73,8 +86,8 @@ class UploadForm extends Component {
     }
 }
 
-
 export default UploadForm;
+
 
 
 
