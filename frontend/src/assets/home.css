@@ -40,133 +40,209 @@
 
 .oldMain-button {
     position: absolute;
-    top: 33%;
+    top: 30%;
     left: 40%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .library-button {
     position: absolute;
-    top: 35%;
+    top: 31%;
     left: 30%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .alex-button {
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 28%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .pierce-button {
     position: absolute;
-    top: 25%;
+    top: 22%;
     left: 16%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .memorial-button {
     position: absolute;
-    top: 25%;
+    top: 22%;
     left: 27%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .clarke-button {
     position: absolute;
-    top: 38%;
+    top: 35%;
     left: 17%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .mckee-button {
     position: absolute;
-    top: 24%;
+    top: 21%;
     left: 36%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .apartments-button {
     position: absolute;
-    top: 86%;
-    left: 35%;
+    top: 83%;
+    left: 36%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .wood-button {
     position: absolute;
-    top: 41%;
+    top: 38%;
     left: 45%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .sande-button {
     position: absolute;
-    top: 34%;
+    top: 31%;
     left: 46%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .studentcenter-button {
     position: absolute;
-    top: 26%;
+    top: 23%;
     left: 45%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .methany-button {
     position: absolute;
-    top: 42%;
+    top: 39%;
     left: 61%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .softball-button {
     position: absolute;
-    top: 61%;
+    top: 58%;
     left: 73%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .track-button {
     position: absolute;
-    top: 63%;
+    top: 60%;
     left: 87%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .football-button {
     position: absolute;
-    top: 52%;
+    top: 49%;
     left: 62%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .baseball-button {
     position: absolute;
-    top: 68%;
+    top: 65%;
     left: 13%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .rapp-button {
     position: absolute;
-    top: 35%;
+    top: 32%;
     left: 55%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .other-button {
     position: absolute;
-    top: 48%;
+    top: 45%;
     left: 35%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
 
 .music-button {
     position: absolute;
-    top: 26%;
+    top: 23%;
     left: 40%;
+    background:url('https://i.imgur.com/0paxGZQ.png') center no-repeat; background-size: 100% 100%;
+    border: none;
+    height: 5.5%;
+    width: 2.3%;
     transform: translate(-50%, -50%);
 }
