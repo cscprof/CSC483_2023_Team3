@@ -98,7 +98,7 @@ const Make = () => {
                             name="q1"
                             value={formData.q1}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
@@ -110,7 +110,7 @@ const Make = () => {
                             name="q2"
                             value={formData.q2}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
@@ -122,7 +122,7 @@ const Make = () => {
                             name="q3"
                             value={formData.q3}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
@@ -134,7 +134,7 @@ const Make = () => {
                             name="q4"
                             value={formData.q4}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
@@ -146,7 +146,7 @@ const Make = () => {
                             name="q5"
                             value={formData.q5}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
@@ -158,7 +158,7 @@ const Make = () => {
                             name="q6"
                             value={formData.q6}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
@@ -170,7 +170,7 @@ const Make = () => {
                             name="q7"
                             value={formData.q7}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
@@ -182,7 +182,7 @@ const Make = () => {
                             name="q8"
                             value={formData.q8}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
@@ -194,7 +194,7 @@ const Make = () => {
                             name="q9"
                             value={formData.q9}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
@@ -206,7 +206,7 @@ const Make = () => {
                             name="q10"
                             value={formData.q10}
                             onChange={handleChange}
-                            min="1"
+                            min="0"
                             max="10"
                         />
                     </label>
