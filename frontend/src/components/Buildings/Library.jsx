@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import "../../assets/buildings/library.css";
 
 const Library = () => {
   return (
