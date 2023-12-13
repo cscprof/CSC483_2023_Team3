@@ -44,6 +44,7 @@ const EventForm = () => {
     }
   };
 
+
   return (
     <div className='eventForm'>
       <h2>Upload Event</h2>
