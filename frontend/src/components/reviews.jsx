@@ -39,19 +39,20 @@ const Reviews = () => {
                 </div>
                 {reviews.map((review) => (
                     <div className="reviewFeed" key={review.title}>
-                        <h3>{review.title}</h3>
-                        <p> Date:{review.date}</p>
-                        <p>Tour Guide's Knowledge:{review.q1}</p>
-                        <p>Information Provided:{review.q2}</p>
-                        <p>Tour Guide & Faculty Engagement Level:{review.q3}</p>
-                        <p>Campus Facilities: {review.q4}</p>
-                        <p>Tour Organization and Structure:{review.q5}</p>
-                        <p>Campus Accessibility:{review.q6}</p>
-                        <p>Interactive Elements:{review.q7}</p>
-                        <p>Tour Duration:{review.q8}</p>
-                        <p>Dining Experience:{review.q9}</p>
-                        <p>Overall Satisfaction:{review.q10}</p>
-                    </div>
+                        <div id="example">
+                            <h3>{review.title}</h3>
+                            <p> Date:{review.date}</p>
+                            <p>Tour Guide's Knowledge:{review.q1}</p>
+                            <p>Information Provided:{review.q2}</p>
+                            <p>Tour Guide & Faculty Engagement Level:{review.q3}</p>
+                            <p>Campus Facilities: {review.q4}</p>
+                            <p>Tour Organization and Structure:{review.q5}</p>
+                            <p>Campus Accessibility:{review.q6}</p>
+                            <p>Interactive Elements:{review.q7}</p>
+                            <p>Tour Duration:{review.q8}</p>
+                            <p>Dining Experience:{review.q9}</p>
+                            <p>Overall Satisfaction:{review.q10}</p>
+                        </div></div>
                 ))}
             </main>
             <footer>
