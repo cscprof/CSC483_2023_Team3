@@ -71,9 +71,6 @@ const Home = () => {
                         <NavLink to="/Rapp">
                             <button className="rapp-button">Rapp</button>
                         </NavLink>
-                        <NavLink to="/other">
-                            <button className="other-button">Alumni</button>
-                        </NavLink>
                         <NavLink to="/Music">
                             <button className="music-button">Johnston</button>
                         </NavLink>
