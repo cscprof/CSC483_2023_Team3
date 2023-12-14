@@ -1,4 +1,11 @@
-.reviewFeed {
+#example {
     border: 1px;
     border-color: black;
+}
+
+.reviewFeed {
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
