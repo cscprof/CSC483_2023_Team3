@@ -21,7 +21,7 @@ const Home = () => {
                 <section className="map">
                     <div className="map-container">
                         <NavLink to="/oldmain">
-                        <button className="oldMain-button"></button>
+                            <button className="oldMain-button"></button>
                         </NavLink>
                         <NavLink to="/libary">
                             <button className="library-button"></button>
@@ -63,9 +63,6 @@ const Home = () => {
                         </NavLink>
                         <NavLink to="/Rapp">
                             <button className="rapp-button"></button>
-                        </NavLink>
-                        <NavLink to="/other">
-                            <button className="other-button"></button>
                         </NavLink>
                         <NavLink to="/Music">
                             <button className="music-button"></button>

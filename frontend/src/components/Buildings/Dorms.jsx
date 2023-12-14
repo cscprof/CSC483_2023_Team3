@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
-import "../../assets/buildings/dorms.css";
+
 
 const Dorms = () => {
   return (
