@@ -8,6 +8,9 @@ const Register = () => {
   const [formData, setFormData] = useState({
     username: '',
     password: '',
+    email: '',
+    firstName: '',
+    lastName: '',
   });
 
   const handleInputChange = (e) => {
@@ -23,6 +26,9 @@ const Register = () => {
     const registrationData = {
       username: formData.username,
       password: formData.password,
+      email: formData.email,
+      firstName: formData.firstName,
+      lastName: formData.lastName,
     };
 
     try {
@@ -61,6 +67,33 @@ const Register = () => {
               type="password"
               name="password"
               value={formData.password}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <label>First Name:</label>
+            <input
+              type="firstName"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <label>Last Name:</label>
+            <input
+              type="lastName"
+              name="lastName"
+              value={formData.lastName}
               onChange={handleInputChange}
             />
           </div>
