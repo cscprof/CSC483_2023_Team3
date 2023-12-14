@@ -34,7 +34,7 @@ const Make = () => {
         e.preventDefault();
 
         try {
-            await axios.post("http://127.0.0.1:8000/api/make_review/", formData);
+            await axios.post("http://mrhaydenn.us.to/api/make_review/", formData);
             setSubmitted(true);
 
             setFormData({

@@ -35,7 +35,7 @@ const Register = () => {
     };
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/register/', registrationData);
+      const response = await axios.post('http://mrhaydenn.us.to:8000/api/register/', registrationData);
       console.log('Registration successful', response.data);
       alert('Account Successfully Created');
       redirectToHomePage();
