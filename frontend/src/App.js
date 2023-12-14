@@ -18,6 +18,7 @@ import Dorms from "./components/Buildings/Dorms";
 import Library from './components/Buildings/Library';
 import Music from "./components/Buildings/Music";
 import Northwood from "./components/Buildings/Northwood";
+import Other from "./components/Buildings/Other";
 import Rapp from "./components/Buildings/Rapp";
 import SandE from "./components/Buildings/SandE";
 import Sports from "./components/Buildings/Sports";
@@ -58,6 +59,8 @@ const App = () => {
         <Route path='/Music' element={<Music />} />
 
         <Route path='/Northwood' element={<Northwood />} />
+
+        <Route path='/Other' element={<Other />} />
 
         <Route path='/Rapp' element={<Rapp />} />
 

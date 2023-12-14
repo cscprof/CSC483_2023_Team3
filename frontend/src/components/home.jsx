@@ -21,19 +21,20 @@ const Home = () => {
                 <section className="map">
                     <div className="map-container">
                         <NavLink to="/oldmain">
-                            <button className="oldMain-button">Old Main</button>
+                            <button className="oldMain-button"></button>
                         </NavLink>
-                        <NavLink to="/Library">
-                            <button className="library-button">Library</button>
+                        <NavLink to="/libary">
+                            <button className="library-button"></button>
                         </NavLink>
                         <NavLink to="/Alex">
-                            <button className="alex-button">Alex's</button>
+                            <button className="alex-button"></button>
                         </NavLink>
                         <NavLink to="/Dorms">
-                            <button className="pierce-button">Pierce</button>
-                        </NavLink>
-                        <NavLink to="/Dorms">
-                            <button className="apartments-button">Apartments</button>
+                            <button className="pierce-button"></button>
+                            <button className="memorial-button"></button>
+                            <button className="clarke-button"></button>
+                            <button className="mckee-button"></button>
+                            <button className="apartments-button"></button>
                         </NavLink>
                         <NavLink to="/Dorms">
                             <button className="clarke-button">Clarke</button>
@@ -45,34 +46,29 @@ const Home = () => {
                             <button className="mckee-button">McKee</button>
                         </NavLink>
                         <NavLink to="/Northwood">
-                            <button className="wood-button">Northwood</button>
+                            <button className="wood-button"></button>
                         </NavLink>
                         <NavLink to="/SandE">
-                            <button className="sande-button">S&E</button>
+                            <button className="sande-button"></button>
                         </NavLink>
                         <NavLink to="Studentcenter">
-                            <button className="studentcenter-button">Student <br></br> center</button>
+                            <button className="studentcenter-button"></button>
                         </NavLink>
                         <NavLink to="/Sports">
-                            <button className="methany-button">Methany</button>
-                        </NavLink>
-                        <NavLink to="/Sports">
-                            <button className="baseball-button">Baseball</button>
-                        </NavLink>
-                        <NavLink to="/Sports">
-                            <button className="softball-button">Softball</button>
-                        </NavLink>
-                        <NavLink to="/Sports">
-                            <button className="football-button">Football</button>
-                        </NavLink>
-                        <NavLink to="/Sports">
-                            <button className="track-button">Track & Field</button>
+                            <button className="methany-button"></button>
+                            <button className="baseball-button"></button>
+                            <button className="softball-button"></button>
+                            <button className="football-button"></button>
+                            <button className="track-button"></button>
                         </NavLink>
                         <NavLink to="/Rapp">
-                            <button className="rapp-button">Rapp</button>
+                            <button className="rapp-button"></button>
+                        </NavLink>
+                        <NavLink to="/other">
+                            <button className="other-button"></button>
                         </NavLink>
                         <NavLink to="/Music">
-                            <button className="music-button">Johnston</button>
+                            <button className="music-button"></button>
                         </NavLink>
                     </div>
                 </section>
