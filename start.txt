@@ -1,0 +1,19 @@
+pull main
+ensure you have python on windows
+cd backend
+source venv/bin/activate - run virtual enviroment
+
+
+cd backend/backend
+sudo service mysql start
+python manage.py runserver
+127.0.0.1:8000/admin
+
+cd frontend/ (OneDrive, Desktop, CSC...)
+npm start
+localhost:3000
+
+wsl get to windows files
+cd /mnt/c/Users/<your_Windows_username>
+ls
+
