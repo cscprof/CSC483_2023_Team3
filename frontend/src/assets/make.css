@@ -1,8 +1,27 @@
 form {
     width: 80%;
-    /* Adjust the width as needed */
     max-width: 500px;
-    /* Set a maximum width if desired */
     margin: 0 auto;
-    /* Center the form horizontally */
+
+}
+
+.makeBut {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+#stud {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#tour {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }

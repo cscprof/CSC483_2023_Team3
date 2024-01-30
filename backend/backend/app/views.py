@@ -1,25 +1,25 @@
 from django.contrib.auth import authenticate, login
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework import status 
+from rest_framework import status
 from django.contrib.auth.models import User
 from .models import Events, Reviews
 from django.http import HttpRequest
-
+import random  # Import random module to generate random questions
 
 @api_view(['POST'])
 def custom_login(request):
     username = request.data.get('username')
     password = request.data.get('password')
-    
+
     user = authenticate(request, username=username, password=password)
-    
+
     if user is not None:
-        login(request, user)  
+        login(request, user)
         return Response({'message': 'Login successful'})
     else:
         return Response({'message': 'Login failed'}, status=status.HTTP_401_UNAUTHORIZED)
-    
+
 @api_view(['POST'])
 def register_user(request):
     username = request.data.get('username')
@@ -28,7 +28,6 @@ def register_user(request):
     User.objects.create_user(username=username, password=password)
 
     return Response({'message': 'User registered successfully'})
-
 
 @api_view(['POST'])
 def make_event(request):
@@ -50,22 +49,31 @@ def get_events(request: HttpRequest):
     except Exception as e:
         print(f"Error in get_events view: {e}")
         return Response({'error': 'Internal Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-    
+
 @api_view(['POST'])
 def submit_review(request):
     try:
-   
         data = request.data
+        q1 = data.get('q1')
+        if q1 == "Review from Student":
+            q1 = "Student Review"
+        elif q1 == "Tour Review":
+            q1 = "Tour Review"
+        else:
+            pass
+
+        random_questions = [random.randint(0, 10) for _ in range(6)]
+
         review = Reviews(
             title=data.get('title'),
             date=data.get('date'),
-            q1=data.get('q1'),
-            q2=data.get('q2'),
-            q3=data.get('q3'),
-            q4=data.get('q4'),
-            q5=data.get('q5'),
-            q6=data.get('q6'),
-            q7=data.get('q7'),
+            q1=q1,
+            q2=random_questions[0],
+            q3=random_questions[1],
+            q4=random_questions[2],
+            q5=random_questions[3],
+            q6=random_questions[4],
+            q7=random_questions[5],
             q8=data.get('q8'),
             q9=data.get('q9'),
             q10=data.get('q10'),
@@ -76,7 +84,7 @@ def submit_review(request):
     except Exception as e:
         print(f"Error in submit_review view: {e}")
         return Response({'error': 'Internal Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-    
+
 @api_view(['GET'])
 def get_reviews(request):
     try:
@@ -91,10 +99,6 @@ def get_reviews(request):
                 'q4': review.q4,
                 'q5': review.q5,
                 'q6': review.q6,
-                'q7': review.q7,
-                'q8': review.q8,
-                'q9': review.q9,
-                'q10': review.q10,
                 'comments': review.comments
             }
             for review in reviews

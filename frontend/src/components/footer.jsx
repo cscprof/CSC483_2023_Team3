@@ -9,8 +9,9 @@ const Footer = () => {
                     <NavLink to="/help">Help</NavLink>
                 </div>
                 <div className="desc">
-                    <h3>Created By Zack Martin, Hayden Wheeler, & Parker Guice</h3>
+                    <h5>Created By Zack Martin, Hayden Wheeler, & Carter Milroy</h5>
                 </div>
+
             </main>
         </div>
     )
