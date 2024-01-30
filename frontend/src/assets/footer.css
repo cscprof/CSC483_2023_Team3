@@ -2,6 +2,8 @@
     font-size: small;
     font-weight: 100;
     color: white;
+    padding-bottom: 1rem;
+    background-color: #353434;
 }
 
 .link a {
