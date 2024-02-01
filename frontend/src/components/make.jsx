@@ -10,13 +10,14 @@ const Make = () => {
     const [formData, setFormData] = useState({
         title: "",
         date: "",
+        name: "",
         q1: "",
-        q2: 0,
-        q3: 0,
-        q4: 0,
-        q5: 0,
-        q6: 0,
-
+        q2: "",
+        q3: "",
+        q4: "",
+        q5: "",
+        q6: "",
+        q7: 0,
         comments: "",
     });
 
@@ -39,12 +40,14 @@ const Make = () => {
             setFormData({
                 title: "",
                 date: "",
+                name: "",
                 q1: "",
-                q2: 0,
-                q3: 0,
-                q4: 0,
-                q5: 0,
-                q6: 0,
+                q2: "",
+                q3: "",
+                q4: "",
+                q5: "",
+                q6: "",
+                q7: 0,
                 comments: "",
             });
         } catch (error) {
@@ -76,56 +79,67 @@ const Make = () => {
                         onChange={handleChange}
                     />
                 </Form.Group>
-                <Form.Group controlId="formQ2">
-                    <Form.Label>Question 1</Form.Label>
+                <Form.Group controlId="formName">
+                    <Form.Label>Your Name: </Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formQ2">
+                    <Form.Label>How would you describe the overall experience of being a student at this college?</Form.Label>
+                    <Form.Control
+                        type="text"
                         name="q2"
                         value={formData.q2}
                         onChange={handleChange}
-                        min="0"
-                        max="10"
                     />
                 </Form.Group>
                 <Form.Group controlId="formQ3">
-                    <Form.Label>Question 2</Form.Label>
+                    <Form.Label>Are you satisfied with the variety and quality of academic programs and courses offered by the college?</Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
                         name="q3"
                         value={formData.q3}
                         onChange={handleChange}
-                        min="0"
-                        max="10"
                     />
                 </Form.Group>
                 <Form.Group controlId="formQ4">
                     <Form.Label>Question 3</Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
                         name="q4"
                         value={formData.q4}
                         onChange={handleChange}
-                        min="0"
-                        max="10"
                     />
                 </Form.Group>
                 <Form.Group controlId="formQ5">
-                    <Form.Label>Question 4</Form.Label>
+                    <Form.Label>How do you feel about the support services available to students, such as counseling, career guidance, and academic assistance?</Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
                         name="q5"
                         value={formData.q5}
                         onChange={handleChange}
-                        min="0"
-                        max="10"
+
                     />
                 </Form.Group>
                 <Form.Group controlId="formQ6">
-                    <Form.Label>Question 5</Form.Label>
+                    <Form.Label>What is your opinion on the campus facilities, including classrooms, libraries, and recreational spaces?</Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
                         name="q6"
                         value={formData.q6}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formQ7">
+                    <Form.Label>Rate Your Experience Out of 10: </Form.Label>
+                    <Form.Control
+                        type="number"
+                        name="q7"
+                        value={formData.q7}
                         onChange={handleChange}
                         min="0"
                         max="10"
@@ -176,56 +190,66 @@ const Make = () => {
                         onChange={handleChange}
                     />
                 </Form.Group>
-                <Form.Group controlId="formQ2">
-                    <Form.Label>Question 1</Form.Label>
+                <Form.Group controlId="formName">
+                    <Form.Label>Your Name: </Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formQ2">
+                    <Form.Label>How did you feel about the atmosphere on campus during the tour?</Form.Label>
+                    <Form.Control
+                        type="text"
                         name="q2"
                         value={formData.q2}
                         onChange={handleChange}
-                        min="0"
-                        max="10"
                     />
                 </Form.Group>
                 <Form.Group controlId="formQ3">
-                    <Form.Label>Question 2</Form.Label>
+                    <Form.Label>Were you able to see and learn about the classrooms, libraries, and other academic spaces during the tour?</Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
                         name="q3"
                         value={formData.q3}
                         onChange={handleChange}
-                        min="0"
-                        max="10"
                     />
                 </Form.Group>
                 <Form.Group controlId="formQ4">
-                    <Form.Label>Question 3</Form.Label>
+                    <Form.Label>What did you think about the dining options and recreational facilities available on campus? </Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
                         name="q4"
                         value={formData.q4}
                         onChange={handleChange}
-                        min="0"
-                        max="10"
                     />
                 </Form.Group>
                 <Form.Group controlId="formQ5">
-                    <Form.Label>Question 4</Form.Label>
+                    <Form.Label>Did any specific features of the campus, like buildings or green spaces, stand out to you?</Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
                         name="q5"
                         value={formData.q5}
                         onChange={handleChange}
-                        min="0"
-                        max="10"
                     />
                 </Form.Group>
                 <Form.Group controlId="formQ6">
-                    <Form.Label>Question 5</Form.Label>
+                    <Form.Label>Did the tour guide share interesting information about the university's history and traditions? Was there anything memorable that stuck with you?</Form.Label>
                     <Form.Control
-                        type="number"
+                        type="text"
                         name="q6"
                         value={formData.q6}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formQ7">
+                    <Form.Label>Rate Your Experience Out of 10: </Form.Label>
+                    <Form.Control
+                        type="number"
+                        name="q7"
+                        value={formData.q7}
                         onChange={handleChange}
                         min="0"
                         max="10"
@@ -268,11 +292,11 @@ const Make = () => {
                 {submitted && <div className="success-message">Review submitted successfully!</div>}
                 <div className="makeBut">
                     <p>Embarking on the journey of higher education is a significant decision, and Geneva College stands out as an exceptional institution for those seeking an enriching academic experience. Prospective students are encouraged to explore the unique offerings and vibrant community that define Geneva. By sharing your thoughts and experiences through a review, you not only contribute to the collective knowledge of the college but also provide invaluable insights for future students. Highlight the aspects that resonate with you, whether it's the dedicated faculty, diverse academic programs, or the strong sense of community. Your review becomes a beacon for those considering Geneva, guiding them towards a place where they can cultivate their passions, forge lasting connections, and thrive academically. Your perspective matters, and by sharing it, you play a crucial role in shaping the future of Geneva College for generations to come.</p>
-                    <Button id="stud" className="btn btn-lg bg-secondary text-warning" onClick={() => setFormData({ ...formData, q1: "Student Review" })}>
+                    <Button id="stud" className="btn btn-lg bg-secondary text-warning btn-outline-warning" onClick={() => setFormData({ ...formData, q1: "Student Review" })}>
                         Review as a Student
                     </Button>
                     <br />
-                    <Button id="tour" className="btn btn-lg bg-secondary text-warning" onClick={() => setFormData({ ...formData, q1: "Tour Review" })}>
+                    <Button id="tour" className="btn btn-lg bg-secondary text-warning btn btn-outline-warning" onClick={() => setFormData({ ...formData, q1: "Tour Review" })}>
                         Review a Tour
                     </Button>
                 </div>
