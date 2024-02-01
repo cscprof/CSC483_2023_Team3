@@ -1,16 +1,18 @@
-#example {
-    border: 1px;
-    border-color: black;
+#reviewMain {
+    background-color: rgb(42, 41, 41);
 }
 
-.make-button {
-    margin-left: auto;
-    margin-right: auto;
+#revBut {
+    padding-bottom: 20px;
 }
 
 .reviewFeed {
-
-    margin-left: auto;
-    margin-right: auto;
+    border: 5px solid rgb(93, 80, 8);
+    border-radius: 25px;
+    margin: 15px auto 0 auto;
     text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    max-width: 1000px;
+
 }

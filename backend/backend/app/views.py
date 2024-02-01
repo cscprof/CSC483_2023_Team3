@@ -67,16 +67,14 @@ def submit_review(request):
         review = Reviews(
             title=data.get('title'),
             date=data.get('date'),
+            name=data.get('name'),
             q1=q1,
-            q2=random_questions[0],
-            q3=random_questions[1],
-            q4=random_questions[2],
-            q5=random_questions[3],
-            q6=random_questions[4],
-            q7=random_questions[5],
-            q8=data.get('q8'),
-            q9=data.get('q9'),
-            q10=data.get('q10'),
+            q2=data.get('q2'),
+            q3=data.get('q3'),
+            q4=data.get('q4'),
+            q5=data.get('q5'),
+            q6=data.get('q6'),
+            q7=data.get('q7'),
             comments=data.get('comments')
         )
         review.save()
@@ -93,12 +91,14 @@ def get_reviews(request):
             {
                 'title': review.title,
                 'date': review.date,
+                'name' : review.name,
                 'q1': review.q1,
                 'q2': review.q2,
                 'q3': review.q3,
                 'q4': review.q4,
                 'q5': review.q5,
                 'q6': review.q6,
+                'q7': review.q7,
                 'comments': review.comments
             }
             for review in reviews
