@@ -69,6 +69,7 @@ const Navbar = () => {
     };
     return (
         <nav className="navbar">
+            <img src={Logo} className="genLogo" alt="geneva logo" />
             <div className="container">
                 <div className="nav-elements">
                     <ul className="navList">
