@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from './navbar';
 import Footer from './footer';
+import Jumbo from './jumbo';
 import '../assets/register.css';
 
 const Register = () => {
@@ -50,9 +51,7 @@ const Register = () => {
       <div>
         <header>
           <Navbar />
-          <div className="jumbo">
-            <h1>EXPERIENCE Geneva</h1>
-          </div>
+          <Jumbo />
         </header>
         <h2 id="regTitle">Register</h2>
         <div id="regForm">

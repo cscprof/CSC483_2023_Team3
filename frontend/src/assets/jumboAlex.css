@@ -1,0 +1,13 @@
+.jumboAlex {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding: 10rem;
+    background-image: url(images/alexander\ hall.jpg);
+    background-color: black;
+    background-size: 100%;
+    background-position: left;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 400px;
+}
