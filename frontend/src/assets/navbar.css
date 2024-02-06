@@ -1,7 +1,6 @@
 .genLogo {
-    height: 2.5rem !important;
-    justify-content: center !important;
-
+    height: 3rem !important;
+    justify-content: left !important;
 }
 
 .navbar {
@@ -35,8 +34,7 @@ ul {
 
 .navList li a:hover {
     text-decoration: none;
-    color: black !important;
-    background-color: gold;
+    color: rgb(194, 194, 194) !important;
 }
 
 .buttonImg {

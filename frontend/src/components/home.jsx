@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./navbar.jsx";
+import Jumbo from "./jumbo.jsx";
 import Footer from "./footer.jsx";
 import '../assets/home.css';
 import { NavLink } from 'react-router-dom';
@@ -8,10 +9,7 @@ const Home = () => {
         <div className="Home">
             <header>
                 <Navbar />
-                <div className="jumbo">
-                    <h1>EXPERIENCE Geneva</h1>
-
-                </div>
+                <Jumbo />
             </header>
             <main>
 

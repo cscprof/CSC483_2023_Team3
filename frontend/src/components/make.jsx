@@ -3,6 +3,7 @@ import axios from "axios";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import '../assets/make.css';
+import Jumbo from "./jumbo";
 
 const Make = () => {
     const [submitted, setSubmitted] = useState(false);
@@ -62,9 +63,7 @@ const Make = () => {
         <div className="Reviews">
             <header>
                 <Navbar />
-                <div className="jumbo">
-                    <h1>EXPERIENCE Geneva</h1>
-                </div>
+                <Jumbo />
             </header>
             <main>
                 <div className="subtitle">

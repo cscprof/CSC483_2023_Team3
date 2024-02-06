@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./navbar";
+import Jumbo from "./jumbo";
 import Footer from "./footer";
 import { Modal, Button } from "react-bootstrap";
 import "../assets/trivia.css";
@@ -88,9 +89,7 @@ const Trivia = () => {
         <div className="Trivia">
             <header>
                 <Navbar />
-                <div className="jumbo">
-                    <h1>EXPERIENCE Geneva</h1>
-                </div>
+                <Jumbo />
                 <div className="subtitle">
                     <h2>Trivia</h2>
                 </div>
