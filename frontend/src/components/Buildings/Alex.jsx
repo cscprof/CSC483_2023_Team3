@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import JumboAlex from "../jumboAlex";
 
 
 const Alex = () => {
@@ -8,9 +9,7 @@ const Alex = () => {
     <div className="Alex">
       <header>
         <Navbar />
-        <div className="jumboSC">
-          <h1>Alexander Hall</h1>
-        </div>
+        <JumboAlex />
       </header>
       <main>
         <div className="about">

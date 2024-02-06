@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import Jumbo from "./jumbo";
 import '../assets/help.css';
 
 const Help = () => {
@@ -8,9 +9,7 @@ const Help = () => {
         <div className="Help">
             <header>
                 <Navbar />
-                <div className="jumbo">
-                    <h1>EXPERIENCE Geneva</h1>
-                </div>
+                <Jumbo />
             </header>
             <main>
                 <div className="subtitle">
