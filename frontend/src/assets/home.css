@@ -7,6 +7,13 @@
     color: white;
     height: 300px;
 } */
+ .jumbo{
+    @media (max-width: 768px) {
+        height: 150px;
+
+    }
+}
+
 
 
 .map {
@@ -21,6 +28,7 @@
     @media (max-width: 768px) {
         background-size: contain;
         min-height: max-content;
+        height: 260px;
 
     }
 }
@@ -247,4 +255,8 @@
     height: 5.5%;
     width: 2.3%;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+
 }
