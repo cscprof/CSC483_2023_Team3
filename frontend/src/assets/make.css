@@ -14,7 +14,9 @@ form {
     text-align: center;
 }
 
-
+#revDesc {
+    font-size: 1.25rem;
+}
 
 #stud {
     margin-top: 25px;
