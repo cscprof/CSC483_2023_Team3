@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./navbar";
+import Jumbo from "./jumbo";
 import Footer from "./footer";
 import EventForm from "./eventForm";
 import UploadForm from "./uploadForm";
@@ -9,9 +10,7 @@ const Upload = () => {
         <div className="Upload">
             <header>
                 <Navbar />
-                <div className="jumbo">
-                    <h1>EXPERIENCE Geneva</h1>
-                </div>
+                <Jumbo />
             </header>
             <main className="uploadFields">
                 <div className="subtitle">

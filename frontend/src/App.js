@@ -24,6 +24,8 @@ import Sports from "./components/Buildings/Sports";
 import Studentcenter from "./components/Buildings/Studentcenter";
 import Register from './components/Register';
 import Make from './components/make.jsx'
+import Jumbo from "./components/jumbo.jsx"
+import JumboAlex from './components/jumboAlex.jsx';
 
 
 
@@ -35,6 +37,8 @@ const App = () => {
         <Route path='/help' element={<Help />} />
 
         <Route path='/events' element={<Events />} />
+        <Route path='/jumbo' element={<Jumbo />} />
+        <Route path='/jumboAlex' element={<JumboAlex />} />
 
         <Route path='/profile' element={<Profile />} />
 

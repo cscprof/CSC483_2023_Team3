@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./navbar";
+import Jumbo from "./jumbo";
 import Footer from "./footer";
 import '../assets/profile.css';
 import Logo from "../assets/images/profile-icon.png"
@@ -8,9 +9,7 @@ const Profile = () => {
         <div className="Profile">
           <header>
             <Navbar />
-                <div className="jumbo">
-                    <h1>EXPERIENCE Geneva</h1>
-                </div>
+            <Jumbo />
                 <div className="subtitle">
                     <h2>Profile</h2>
                 </div>
