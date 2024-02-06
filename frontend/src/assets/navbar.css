@@ -6,6 +6,10 @@
     height: 3.5rem !important;
     justify-content: center !important;
     padding: 10px;
+
+    @media (max-width: 768px) {
+        height: 6rem !important;
+    }
 }
 
 .navbar {
