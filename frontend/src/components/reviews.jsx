@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 import { Button, Modal, Form } from "react-bootstrap";
 import '../assets/review.css';
+import Jumbo from "./jumbo";
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
@@ -29,9 +30,7 @@ const Reviews = () => {
         <div className="Reviews">
             <header>
                 <Navbar />
-                <div className="jumbo">
-                    <h1>EXPERIENCE Geneva</h1>
-                </div>
+                <Jumbo />
             </header>
             <main id="reviewMain">
                 <div className="subtitle" id="revBut">

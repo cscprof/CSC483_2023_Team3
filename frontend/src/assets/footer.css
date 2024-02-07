@@ -22,8 +22,10 @@
     background-color: #353434;
     justify-content: center;
     text-align: center;
-    height: 4rem;
+    height: 6rem;
     width: 100%;
     margin: auto 0;
 
+    @media (max-width: 768px) {
+    }
 }
