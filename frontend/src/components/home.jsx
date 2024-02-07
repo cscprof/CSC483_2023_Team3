@@ -13,7 +13,7 @@ const Home = () => {
             </header>
             <main>
 
-                <div className="subtitle">
+                <div id="mapTitle">
                     <h2>Interactive Map</h2>
                 </div>
                 <section className="map">
@@ -35,13 +35,13 @@ const Home = () => {
                             <button className="apartments-button"></button>
                         </NavLink>
                         <NavLink to="/Dorms">
-                            <button className="clarke-button">Clarke</button>
+                            <button className="clarke-button"></button>
                         </NavLink>
                         <NavLink to="/Dorms">
-                            <button className="memorial-button">Memorial</button>
+                            <button className="memorial-button"></button>
                         </NavLink>
                         <NavLink to="/Dorms">
-                            <button className="mckee-button">McKee</button>
+                            <button className="mckee-button"></button>
                         </NavLink>
                         <NavLink to="/Northwood">
                             <button className="wood-button"></button>
@@ -62,9 +62,7 @@ const Home = () => {
                         <NavLink to="/Rapp">
                             <button className="rapp-button"></button>
                         </NavLink>
-                        <NavLink to="/other">
-                            <button className="other-button"></button>
-                        </NavLink>
+
                         <NavLink to="/Music">
                             <button className="music-button"></button>
                         </NavLink>
