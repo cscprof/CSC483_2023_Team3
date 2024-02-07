@@ -12,7 +12,7 @@ backend/venv
 /backend/venv
 # another stupid file
 backend/backend/app/__pycache__/
-frontend\node_modules\.cache\.eslintcache
+frontend/node_modules/
 #Yet another
 backend/backend/backend/__pycache__/
 __pycache__/
