@@ -1,15 +1,14 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import JumboNorthwood from "../jumboNorthwood";
 
 const NorthwoodHall = () => {
   return (
     <div className="NorthwoodHall">
       <header>
         <Navbar />
-        <div className="jumboSC">
-          <h1>Northwood Hall</h1>
-        </div>
+        <JumboNorthwood />
       </header>
       <main>
         <div className="about">

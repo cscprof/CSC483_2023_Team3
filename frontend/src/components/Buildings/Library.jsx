@@ -1,15 +1,14 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import JumboLibrary from "../jumboLibrary";
 
 const Library = () => {
   return (
     <div className="Library">
       <header>
         <Navbar />
-        <div className="jumboSC">
-          <h1>McCartney Library</h1>
-        </div>
+        <JumboLibrary />
       </header>
       <main>
         <div className="about">

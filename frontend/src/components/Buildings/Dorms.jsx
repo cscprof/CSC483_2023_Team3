@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import JumboDorms from "../jumboClarke";
 
 
 const Dorms = () => {
@@ -8,9 +9,7 @@ const Dorms = () => {
     <div className="Dorms">
       <header>
         <Navbar />
-        <div className="jumboSC">
-          <h1>Residence Halls</h1>
-        </div>
+        <JumboDorms />
       </header>
       <main>
         <div className="about">
