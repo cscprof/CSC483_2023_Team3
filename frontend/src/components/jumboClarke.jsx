@@ -7,7 +7,7 @@ const JumboClarke = () => {
         <div>
             <div className="backgroundImage"></div>
             <div className="jumboClarke">
-                <h1>Residence Halls</h1>
+                <h1>Our Residence Halls </h1>
             </div> 
         </div>
     )
