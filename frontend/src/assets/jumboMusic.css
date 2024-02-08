@@ -1,0 +1,12 @@
+.jumboMusic {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding: 10rem;
+    background-image: url(images/johnston-gym.jpg);
+    background-size: 120%;
+    background-position: left;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 400px;
+}

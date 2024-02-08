@@ -1,0 +1,12 @@
+.jumboLibrary {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding: 10rem;
+    background-image: url(images/students-reading-dark-4289619474.jpg);
+    background-size: 160%;
+    background-position: left;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 400px;
+}

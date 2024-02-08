@@ -8,9 +8,7 @@ const OldMain = () => {
     <div className="OldMain">
       <header>
         <Navbar />
-        <div className="jumboSC">
-          <h1>Old Main</h1>
-        </div>
+        <OldMain />
       </header>
       <main>
         <div className="about">
