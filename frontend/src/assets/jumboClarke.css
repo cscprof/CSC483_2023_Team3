@@ -1,0 +1,11 @@
+.jumboClarke { 
+    padding: 10rem;
+    width: 100%;
+    font-size: 150%;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    background-image: url(images/reslifeslider5-2881855634.jpg);
+    background-size: cover;
+}

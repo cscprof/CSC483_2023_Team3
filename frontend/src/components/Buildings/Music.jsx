@@ -1,15 +1,14 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import JumboMusic from "../jumboMusic";
 
 const JohnstonGym = () => {
   return (
     <div className="JohnstonGym">
       <header>
         <Navbar />
-        <div className="jumboSC">
-          <h1>Johnston Gym</h1>
-        </div>
+        <JumboMusic />
       </header>
       <main>
         <div className="about">
