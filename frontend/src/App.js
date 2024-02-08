@@ -26,6 +26,11 @@ import Register from './components/Register';
 import Make from './components/make.jsx'
 import Jumbo from "./components/jumbo.jsx"
 import JumboAlex from './components/jumboAlex.jsx';
+import JumboDorms from './components/jumboClarke.jsx';
+import JumboLibrary from './components/jumboLibrary.jsx';
+import JumboMusic from './components/jumboMusic.jsx';
+import JumboNorthwood from './components/jumboNorthwood.jsx';
+import JumboOldMain from './components/jumboOldMain.jsx';
 
 
 
@@ -39,6 +44,11 @@ const App = () => {
         <Route path='/events' element={<Events />} />
         <Route path='/jumbo' element={<Jumbo />} />
         <Route path='/jumboAlex' element={<JumboAlex />} />
+        <Route path='/jumboDorms' element={<JumboDorms />} />
+        <Route path='/jumboLibrary' element={<JumboLibrary />} />
+        <Route path='/jumboMusic' element={<JumboMusic />} />
+        <Route path='/jumboNorthwood' element={<JumboNorthwood />} />
+        <Route path='/jumboOldMain' element={<JumboOldMain />} />
 
         <Route path='/profile' element={<Profile />} />
 

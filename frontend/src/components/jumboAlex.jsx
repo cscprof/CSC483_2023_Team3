@@ -7,7 +7,7 @@ const JumboAlex = () => {
         <div className = "wrap">
              <img
                 class="backgroundImage"
-                src="C:\Users\cmilr\OneDrive\Desktop\CSC483_2023_Team3\frontend\src\assets\images\alexander hall.jpg"
+                src="C:\Users\cmilr\OneDrive\Desktop\CSC483_2023_Team3\frontend\src\assets\images\bld-alexander-2-782720129.jpg"
                 alt="alexander hall"
             ></img>
             <div className="jumboAlex">

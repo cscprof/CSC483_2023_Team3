@@ -1,0 +1,12 @@
+.jumboOldMain {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding: 10rem;
+    background-image: url(images/bld-oldmain-5-4104396858.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 400px;
+}
