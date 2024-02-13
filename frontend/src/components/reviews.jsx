@@ -16,7 +16,7 @@ const Reviews = () => {
             try {
                 //http://127.0.0.1:8000/api/get_reviews/
                 //http://mrhaydenn.us.to:8000/api/get_reviews/
-                const response = await axios.get('http://127.0.0.1:8000/api/get_reviews/');
+                const response = await axios.get('http://mrhaydenn.us.to:8000/api/get_reviews/');
                 setReviews(response.data);
             } catch (error) {
                 console.error('Error fetching reviews:', error);
