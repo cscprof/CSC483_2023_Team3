@@ -69,16 +69,10 @@ const Navbar = () => {
     };
     return (
         <nav className="navbar">
-            <img src={Logo} className="genLogo" alt="geneva logo" />
+            <a href="/"><img src={Logo} className='genLogo' alt='geneva logo' /></a>
             <div className="container">
                 <div className="nav-elements">
                     <ul className="navList">
-                        <li>
-                            {/* <img src={Logo} className="genLogo" alt="geneva logo" /> */}
-                            <a href="/">
-                                <img src={Logo} className='genLogo' alt='geneva logo' />
-                            </a>
-                        </li>
                         <li>
                             <NavLink to="/">Home</NavLink>
                         </li>
