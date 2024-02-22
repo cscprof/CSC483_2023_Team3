@@ -37,12 +37,12 @@
 #mapTitle {
     color: white;
     text-align: center;
-    height: 100px;
+    height: 60px;
     font-size: 1.25rem;
-    background-color: #353434;
+    background-color: rgba(36, 36, 36, 1);
     text-align: center;
     justify-content: center;
-    padding-top: 25px;
+    padding-top: 10px;
     width: 100%;
 }
 
