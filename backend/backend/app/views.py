@@ -5,14 +5,14 @@ from rest_framework import status
 from django.contrib.auth.models import User
 from .models import Events, Reviews
 from django.http import HttpRequest
-import random  # Import random module to generate random questions
-
+import random 
 @api_view(['POST'])
 def custom_login(request):
     username = request.data.get('username')
     password = request.data.get('password')
+    email = request.data.get("email")
 
-    user = authenticate(request, username=username, password=password)
+    user = authenticate(request, username=username, password=password, email=email)
 
     if user is not None:
         login(request, user)
@@ -24,8 +24,9 @@ def custom_login(request):
 def register_user(request):
     username = request.data.get('username')
     password = request.data.get('password')
+    email = request.data.get("email")
 
-    User.objects.create_user(username=username, password=password)
+    User.objects.create_user(username=username, password=password, email=email)
 
     return Response({'message': 'User registered successfully'})
 
