@@ -31,6 +31,7 @@ import JumboLibrary from './components/jumboLibrary.jsx';
 import JumboMusic from './components/jumboMusic.jsx';
 import JumboNorthwood from './components/jumboNorthwood.jsx';
 import JumboOldMain from './components/jumboOldMain.jsx';
+import JumboAthletics from './components/jumboAthletics.jsx';
 
 
 
@@ -49,6 +50,7 @@ const App = () => {
         <Route path='/jumboMusic' element={<JumboMusic />} />
         <Route path='/jumboNorthwood' element={<JumboNorthwood />} />
         <Route path='/jumboOldMain' element={<JumboOldMain />} />
+        <Route path='/jumboAthletics' element={<JumboAthletics />} />
 
         <Route path='/profile' element={<Profile />} />
 

@@ -3,9 +3,9 @@
 
 
 .genLogo {
-    height: 3.5rem !important;
+    height: 8rem !important;
     justify-content: center !important;
-    padding: 0px 0px 5px 30px;
+    padding: 20px 0px 0px 40px;
     @media (max-width: 768px) {
         height: 6rem !important;
     }
@@ -13,9 +13,9 @@
 
 .navbar {
     margin: 0;
-    background-color: #353434 !important;
+    background-color: rgba(36, 36, 36, 1) !important;
     display: flex !important;
-    height: 5rem !important;
+    height: 6.5rem !important;
     text-decoration: none !important;
     justify-content: left !important;
 }
@@ -42,9 +42,9 @@ ul {
 .navList li a:hover {
     text-decoration: none;
     color: gold !important;
-    background-color: black;
+    /* background-color: black;
     border-radius: 7px;
-    padding: 5px
+    padding: 5px */
 
 }
 
