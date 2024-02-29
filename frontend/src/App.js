@@ -32,6 +32,9 @@ import JumboMusic from './components/jumboMusic.jsx';
 import JumboNorthwood from './components/jumboNorthwood.jsx';
 import JumboOldMain from './components/jumboOldMain.jsx';
 import JumboAthletics from './components/jumboAthletics.jsx';
+import JumboRapp from './components/jumboRapp.jsx';
+import JumboStudentCenter from './components/jumboStudentCenter.jsx';
+import JumboSandE from './components/jumboSandE.jsx';
 
 
 
@@ -51,6 +54,9 @@ const App = () => {
         <Route path='/jumboNorthwood' element={<JumboNorthwood />} />
         <Route path='/jumboOldMain' element={<JumboOldMain />} />
         <Route path='/jumboAthletics' element={<JumboAthletics />} />
+        <Route path='/jumboRapp' element={<JumboRapp />} />
+        <Route path='/jumboStudentCenter' element={<JumboStudentCenter />} />
+        <Route path='/jumboSandE' element={<JumboSandE />} />
 
         <Route path='/profile' element={<Profile />} />
 

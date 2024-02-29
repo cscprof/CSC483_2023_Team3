@@ -1,15 +1,14 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import JumboRapp from "../jumboRapp";
 
 const Rapp = () => {
   return (
     <div className="Rapp">
       <header>
         <Navbar />
-        <div className="jumboSC">
-          <h1>Rapp Technical Design Center</h1>
-        </div>
+        <JumboRapp />
       </header>
       <main>
         <div className="about">
