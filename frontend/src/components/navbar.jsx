@@ -5,12 +5,13 @@ import Logo from '../assets/images/genevalogo.svg';
 import Logo1 from '../assets/images/profile-icon.png';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Navbar = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [tourUsername, setTourUsername] = useState(''); // Add tourUsername state
-    const [tourPassword, setTourPassword] = useState(''); // Add tourPassword state
+    const [tourUsername, setTourUsername] = useState('');
+    const [tourPassword, setTourPassword] = useState('');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const axiosInstance = axios.create({
         baseURL: 'http://mrhaydenn.us.to:8000',
@@ -40,7 +41,6 @@ const Navbar = () => {
                     console.error(error);
                 });
         } else if (tourUsername && tourPassword) {
-            // Handle tour code login
             const tourData = {
                 username: tourUsername,
                 password: tourPassword,
@@ -84,8 +84,8 @@ const Navbar = () => {
         localStorage.removeItem('token');
         setUsername('');
         setPassword('');
-        setTourUsername(''); // Clear tourUsername on logout
-        setTourPassword(''); // Clear tourPassword on logout
+        setTourUsername('');
+        setTourPassword('');
         setIsLoggedIn(false);
     };
 
@@ -113,7 +113,9 @@ const Navbar = () => {
                                 <NavLink to="/upload">Upload</NavLink>
                             </li>) : ("")}
                     </ul>
-                    <input id="myBtn" className="buttonImg" type="Image" src={Logo1} height="50" width="50" name="Icon"></input>
+                    {isLoggedIn ? (
+                        <input id="myBtn" className="buttonImg" type="Image" src={Logo1} height="50" width="50" name="Icon"></input>) :
+                        (<Button id="myBtn" className="buttonImg" variant="warning" size="lg" onClick={() => handleLogin()}>Login</Button>)}
                     <div id="myModal" className="modal">
                         <div className="modal-content">
                             <span className="close">&times;</span>
