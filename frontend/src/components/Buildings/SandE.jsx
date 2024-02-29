@@ -1,15 +1,14 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import JumboSandE from "../jumboSandE";
 
 const SandE = () => {
   return (
     <div className="S&E">
       <header>
         <Navbar />
-        <div className="jumboSC">
-          <h1>Science & Engineering</h1>
-        </div>
+        <JumboSandE />
       </header>
       <main>
         <div className="about">

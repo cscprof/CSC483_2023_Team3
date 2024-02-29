@@ -2,16 +2,14 @@ import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
 import "../../assets/Buildings/Studentcenter.css";
+import JumboStudentCenter from "../jumboStudentCenter";
 
 const StudentCenter = () => {
   return (
     <div className="StudentCenter">
       <header>
         <Navbar />
-        <div className="jumboSC">
-          <h1>Student Center</h1>
-
-        </div>
+        <JumboStudentCenter />
       </header>
       <main>
         <div className="about">
