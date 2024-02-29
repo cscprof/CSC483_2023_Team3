@@ -21,7 +21,7 @@ const Home = () => {
                         <NavLink to="/oldmain">
                             <button className="oldMain-button"></button>
                         </NavLink>
-                        <NavLink to="/libary">
+                        <NavLink to="/Library">
                             <button className="library-button"></button>
                         </NavLink>
                         <NavLink to="/Alex">
