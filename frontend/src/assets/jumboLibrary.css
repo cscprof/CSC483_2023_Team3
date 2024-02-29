@@ -3,7 +3,11 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     padding: 10rem;
-    background-image: url(images/students-reading-dark-4289619474.jpg);
+    background-image: -webkit-linear-gradient(0deg, rgba(36,36,36, 0), rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/library.png);
+    background-image:  -moz-linear-gradient(0deg, rgba(36,36,36, 0), rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/library.png);
+    background-image:  -o-linear-gradient(0deg, rgba(36,36,36, 0), rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/library.png);
+    background-image:  -ms-linear-gradient(0deg, rgba(36,36,36, 0), rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/library.png);
+    background-image:  linear-gradient(0deg, rgba(36,36,36, 0), rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/library.png);
     background-size: 160%;
     background-position: left;
     width: 100%;
