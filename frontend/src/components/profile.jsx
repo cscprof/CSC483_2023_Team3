@@ -1,10 +1,28 @@
-import React from "react";
+
 import Navbar from "./navbar";
 import Jumbo from "./jumbo";
 import Footer from "./footer";
 import '../assets/profile.css';
 import Logo from "../assets/images/profile-icon.png"
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 const Profile = () => {
+
+        const [events, setEvents] = useState([]);
+    
+        useEffect(() => {
+            axios.get('http://mrhaydenn.us.to:8000/api/Users/')
+                .then(response => {
+                    setEvents(response.data);
+                })
+                .catch(error => {
+                    console.error('Error fetching profile data:', error);
+                });
+        }, []);
+
+
+
     return (
         <div className="Profile">
           <header>
@@ -54,3 +72,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
