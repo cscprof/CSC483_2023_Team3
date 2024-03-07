@@ -95,13 +95,20 @@ const UploadForm = () => {
       });
     };
   
+    const handleFileChange = (upload) => {
+      setFormData({
+        ...formData,
+        image: upload.target.files[0], // Assuming you're uploading only one image
+      });
+    };
+  
     const handleSubmit = async (upload) => {
       upload.preventDefault();
   
       const uploadData = {
         selectedBuilding: formData.selectedBuilding,
         description: formData.description,
-        image: ImageData.image,
+        image: formData.image,
       };
   
       try {
@@ -127,21 +134,21 @@ const UploadForm = () => {
         <form onSubmit={handleSubmit}>
           <div>
             <label>Building:</label>
-            
+  
             <label htmlFor="selectedBuilding">Select a Playlist:</label>
-                    <select
-                        id="selectedBuilding"
-                        name="selectedBuilding"
-                        value={this.state.selectedBuilding}
-                        onChange={this.handleInputChange}
-                        required
-                    >
-                        <option value="">Select a Building</option>
-                        <option value="oldMain">Old Main</option>
-                        <option value="s&e">S&E</option>
-                        <option value="northwood">Northwood</option>
-                    </select>
-            </div>
+            <select
+              id="selectedBuilding"
+              name="selectedBuilding"
+              value={formData.selectedBuilding}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="">Select a Building</option>
+              <option value="oldMain">Old Main</option>
+              <option value="s&e">S&E</option>
+              <option value="northwood">Northwood</option>
+            </select>
+          </div>
           <div>
             <label>Description:</label>
             <input
@@ -156,10 +163,10 @@ const UploadForm = () => {
           <div>
             <label>image:</label>
             <input
-              type="image"
+              type="file"
               name="image"
-              value={ImageData.image}
-              onChange={handleInputChange}
+              accept="image/*"
+              onChange={handleFileChange}
             />
           </div>
           <button type="submit">Submit Image</button>
@@ -169,5 +176,3 @@ const UploadForm = () => {
   };
   
   export default UploadForm;
-  
-
