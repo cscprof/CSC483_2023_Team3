@@ -29,6 +29,16 @@ def register_user(request):
 
     return Response({'message': 'User registered successfully'})
 
+@api_view(['GET'])
+def get_user(request):
+    username = request.data.get('username')
+    email = request.data.get('email')
+    password = request.data.get('password')
+
+    User.objects.create_user(username=username, password=password)
+
+    return Response({'message': 'User data getten successfully'})
+
 @api_view(['POST'])
 def make_event(request):
     title = request.data.get('title')
@@ -36,7 +46,7 @@ def make_event(request):
     description = request.data.get('description')
     location = request.data.get('location')
 
-    Events.objects.create(title=title, date=date, description=description, location=location, image=image)
+    Events.objects.create(title=title, date=date, description=description, location=location)
 
     return Response({'message': 'Event successfully'})
 
@@ -117,3 +127,14 @@ def upload_images(request):
     Images.objects.create(selectBuilding=selectBuilding, description=description, image=image)
 
     return Response({'message': 'Image uploaded successfully'})
+
+
+@api_view(['GET'])
+def get_images(request: HttpRequest):
+    try:
+        images = Images.objects.all()
+        serialized_images = [{'selectBuilding': image.selectBuilding, 'description': image.description, 'image': image.image} for image in images]
+        return Response(serialized_images)
+    except Exception as e:
+        print(f"Error in get_images view: {e}")
+        return Response({'error': 'Internal Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
