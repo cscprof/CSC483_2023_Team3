@@ -9,14 +9,14 @@ import axios from 'axios';
 
 const Profile = () => {
 
-        const [events, setEvents] = useState([]);
+        const [user, setUser] = useState([]);
     
         useEffect(() => {
             // http://127.0.0.1:8000/api/Users/
             // http://mrhaydenn.us.to:8000/api/Users/
-            axios.get('http://127.0.0.1:8000/api/Users/')
+            axios.get('http://127.0.0.1:8000/api/get_user/')
                 .then(response => {
-                    setEvents(response.data);
+                    setUser(response.data);
                 })
                 .catch(error => {
                     console.error('Error fetching profile data:', error);
@@ -41,8 +41,6 @@ const Profile = () => {
             
                 <div className="container">
                     <div className="column">
-                        <p className="description"><b>First Name:</b></p>
-                        <p className="description"><b>Last Name:</b></p>
                         <p className="description"><b>Username:</b></p>
                         <p className="description"><b>Email:</b></p>
                         <p className="description"><b>Password:</b></p>
@@ -51,14 +49,17 @@ const Profile = () => {
                     </div>
 
                     <div className="column"> 
-                        <p className="user">((Temp))</p>
-                        <p className="user">((Temp))</p>
-                        <p className="user">((Temp))</p>
+                    {user.map(user => (
+                    <div  key={user.username}>
+                        <p className="user">{user.username}</p>
+                        <p className="user">{user.email}</p>
+                        <p className="user">{user.password}</p>
                         <p className="user">((Temp))</p>
                         <p className="user">((Temp))</p> 
-                        <p className="user">((Temp))</p>
-                        <p className="user">((Temp))</p>
                         </div>
+                    ))}
+                        </div>
+                   
 
                     <div className="column">
                     <button type="button" className="buttons">Edit Profile</button>

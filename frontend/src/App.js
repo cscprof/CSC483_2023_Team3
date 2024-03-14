@@ -26,6 +26,7 @@ import Register from './components/Register';
 import Make from './components/make.jsx'
 import Jumbo from "./components/jumbo.jsx"
 import JumboAlex from './components/jumboAlex.jsx';
+import Gallery from './components/gallery.jsx';
 
 
 
@@ -70,6 +71,8 @@ const App = () => {
         <Route path='/Sports' element={<Sports />} />
 
         <Route path='/Studentcenter' element={<Studentcenter />} />
+
+        <Route path='/Gallery' element={<Gallery />} />
       </Routes>
     </Router>
   );
