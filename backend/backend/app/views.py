@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth.models import User
-from .models import Events, Reviews
+from .models import Events, Reviews, Images
 from django.http import HttpRequest
 import random  # Import random module to generate random questions
 
@@ -36,7 +36,7 @@ def make_event(request):
     description = request.data.get('description')
     location = request.data.get('location')
 
-    Events.objects.create(title=title, date=date, description=description, location=location)
+    Events.objects.create(title=title, date=date, description=description, location=location, image=image)
 
     return Response({'message': 'Event successfully'})
 
@@ -44,7 +44,7 @@ def make_event(request):
 def get_events(request: HttpRequest):
     try:
         events = Events.objects.all()
-        serialized_events = [{'title': event.title, 'description': event.description, 'date': event.date, 'location': event.location} for event in events]
+        serialized_events = [{'title': event.title, 'description': event.description, 'date': event.date, 'location': event.location, 'image': event.image} for event in events]
         return Response(serialized_events)
     except Exception as e:
         print(f"Error in get_events view: {e}")
@@ -107,3 +107,13 @@ def get_reviews(request):
     except Exception as e:
         print(f"Error in get_reviews view: {e}")
         return Response({'error': 'Internal Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+@api_view(['POST'])
+def upload_images(request):
+    selectBuilding = request.data.get('selectBuilding')
+    description = request.data.get('description')
+    image = request.data.get('image')
+
+    Images.objects.create(selectBuilding=selectBuilding, description=description, image=image)
+
+    return Response({'message': 'Image uploaded successfully'})
