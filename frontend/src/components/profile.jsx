@@ -12,7 +12,9 @@ const Profile = () => {
         const [events, setEvents] = useState([]);
     
         useEffect(() => {
-            axios.get('http://mrhaydenn.us.to:8000/api/Users/')
+            // http://127.0.0.1:8000/api/Users/
+            // http://mrhaydenn.us.to:8000/api/Users/
+            axios.get('http://127.0.0.1:8000/api/Users/')
                 .then(response => {
                     setEvents(response.data);
                 })

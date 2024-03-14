@@ -8,7 +8,7 @@ const Table = () => {
     useEffect(() => {
         //http://127.0.0.1:8000/api/events/
         //http://mrhaydenn.us.to:8000/api/events/
-        axios.get('http://mrhaydenn.us.to:8000/api/events/')
+        axios.get('http://127.0.0.1:8000/api/events/')
             .then(response => {
                 setEvents(response.data);
             })

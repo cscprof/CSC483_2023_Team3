@@ -82,7 +82,7 @@ export default UploadForm;
 
 const UploadForm = () => {
     const [formData, setFormData] = useState({
-      selectedBuilding: '',
+      selectBuilding: '',
       description: '',
       image: '',
     });
@@ -106,18 +106,20 @@ const UploadForm = () => {
       upload.preventDefault();
   
       const uploadData = {
-        selectedBuilding: formData.selectedBuilding,
+        selectBuilding: formData.selectBuilding,
         description: formData.description,
         image: formData.image,
       };
   
       try {
-        const response = await axios.post('http://mrhaydenn.us.to:8000/api/upload_images/', uploadData);
+        // http://127.0.0.1:8000/api/upload_images/
+        // http://mrhaydenn.us.to:8000/api/upload_images/
+        const response = await axios.post('http://127.0.0.1:8000/api/upload_images/', uploadData);
         console.log('Image Created', response.data);
         setSubmitted(true);
   
         setFormData({
-          selectedBuilding: '',
+          selectBuilding: '',
           description: '',
           image: '',
         });
@@ -135,11 +137,11 @@ const UploadForm = () => {
           <div>
             <label>Building:</label>
   
-            <label htmlFor="selectedBuilding">Select a Playlist:</label>
+           <label htmlFor="selectBuilding">Select a Playlist:</label>
             <select
-              id="selectedBuilding"
-              name="selectedBuilding"
-              value={formData.selectedBuilding}
+              id="selectBuilding"
+              name="selectBuilding"
+              value={formData.selectBuilding}
               onChange={handleInputChange}
               required
             >
@@ -147,7 +149,7 @@ const UploadForm = () => {
               <option value="oldMain">Old Main</option>
               <option value="s&e">S&E</option>
               <option value="northwood">Northwood</option>
-            </select>
+            </select> 
           </div>
           <div>
             <label>Description:</label>

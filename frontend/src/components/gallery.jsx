@@ -5,8 +5,12 @@ import '../assets/gallery.css';
 const Table = () => {
     const [events, setEvents] = useState([]);
 
+
+
     useEffect(() => {
-        axios.get('http://mrhaydenn.us.to:8000/api/images/')
+        // http://mrhaydenn.us.to:8000/api/images/
+        // http://127.0.0.1:8000/api/images/
+        axios.get('http://127.0.0.1:8000/api/images/')
             .then(response => {
                 setEvents(response.data);
             })
