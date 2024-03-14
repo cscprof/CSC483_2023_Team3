@@ -9,14 +9,19 @@ import Jumbo from "./jumbo";
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
-
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     useEffect(() => {
 
+
+        const token = localStorage.getItem('token');
+        if (token) {
+            setIsLoggedIn(true);
+        }
         const fetchReviews = async () => {
             try {
                 //http://127.0.0.1:8000/api/get_reviews/
                 //http://mrhaydenn.us.to:8000/api/get_reviews/
-                const response = await axios.get('http://127.0.0.1:8000/api/get_reviews/');
+                const response = await axios.get('http://mrhaydenn.us.to:8000/api/get_reviews/');
                 setReviews(response.data);
             } catch (error) {
                 console.error('Error fetching reviews:', error);
@@ -35,9 +40,11 @@ const Reviews = () => {
             <main id="reviewMain">
                 <div className="subtitle" id="revBut">
                     <h2>Reviews</h2>
-                    <NavLink to="/make">
-                        <button className="btn btn-lg dark text-warning btn-outline-warning">Leave a Review!</button>
-                    </NavLink>
+                    {isLoggedIn ? (
+                        <NavLink to="/make">
+                            <button className="btn btn-lg dark text-warning btn-outline-warning">Leave a Review!</button>
+                        </NavLink>) : ("")
+                    }
                 </div>
                 {reviews.map((review) => (
                     <div className="reviewFeed" key={review.title}>

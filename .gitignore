@@ -5,7 +5,8 @@
 /.pnp
 .pnp.js
 backend/venv
-
+backend/backend/app/
+backend/cd
 # testing
 /coverage
 #stupid venv file

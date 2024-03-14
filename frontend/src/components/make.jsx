@@ -35,7 +35,7 @@ const Make = () => {
         //http://127.0.0.1:8000/api/make_review/
         //http://mrhaydenn.us.to:8000/api/make_review/
         try {
-            await axios.post("http://127.0.0.1:8000/api/make_review/", formData);
+            await axios.post("http://mrhaydenn.us.to:8000/api/make_review/", formData);
             setSubmitted(true);
 
             setFormData({
