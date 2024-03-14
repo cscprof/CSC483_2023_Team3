@@ -10,6 +10,7 @@ const Register = () => {
   const [formData, setFormData] = useState({
     username: '',
     password: '',
+    email: '',
   });
 
   const navigate = useNavigate();
@@ -25,18 +26,25 @@ const Register = () => {
     navigate('/');
   };
 
-
-
   const handleRegistration = async (e) => {
     e.preventDefault();
 
+    const { username, password, email } = formData;
+
+    // Check if the email contains "@geneva.edu"
+    if (!email.includes('@geneva.edu')) {
+      alert('Please register with a @geneva.edu email address.');
+      return;
+    }
+
     const registrationData = {
-      username: formData.username,
-      password: formData.password,
+      username,
+      password,
+      email,
     };
 
     try {
-      const response = await axios.post('http://mrhaydenn.us.to:8000/api/register/', registrationData);
+      const response = await axios.post('http://127.0.0.1:8000/api/register/', registrationData);
       console.log('Registration successful', response.data);
       alert('Account Successfully Created');
       redirectToHomePage();
@@ -44,7 +52,6 @@ const Register = () => {
       console.error('Registration failed', error);
     }
   };
-
 
   return (
     <div className="Reviews">
@@ -74,8 +81,18 @@ const Register = () => {
                 onChange={handleInputChange}
               />
             </div>
+            <div>
+              <label>Email:</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+            </div>
             <button type="submit">Register</button>
-          </form></div>
+          </form>
+        </div>
         <footer>
           <Footer />
         </footer>

@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
-import "../../assets/oldmain.css"; // Import the specific styles for Old Main
+import "../../assets/oldmain.css";
 
 const OldMain = () => {
   return (
-    <div className="OldMain">
+    <div className="Oldmain">
       <header>
         <Navbar />
         <OldMain />
