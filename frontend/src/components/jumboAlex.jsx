@@ -6,7 +6,7 @@ const JumboAlex = () => {
     return (
         <div className = "wrap">
             <div className="jumboAlex">
-                  <h1>Alexander Hall</h1>
+                  {/* <h1>Alexander Hall</h1> */}
             </div> 
         </div>
     )

@@ -32,9 +32,6 @@ const Alex = () => {
                 <li>Academic Significance: The hall houses [specific departments or functions], adding to its role as a cornerstone of academic life at Geneva College.</li>
               </ul>
             </div>
-            <div className="col" id="imgPlace">
-              <img src="https://www.geneva.edu/campusmap/_assets/images/bld-alexander-1.jpg" alt="Alexander Hall"></img>
-            </div>
           </div>
         </div>
         <div className="notable">
@@ -48,8 +45,8 @@ const Alex = () => {
         </div>
         <div className="gallery">
           <h1 className="sectTitle">Gallery</h1>
-          <div>
-            <center><p>Photo Area Here</p></center>
+          <div className="col" id="imgPlace">
+              <img src="https://www.geneva.edu/campusmap/_assets/images/bld-alexander-1.jpg" alt="Alexander Hall"></img>
           </div>
         </div>
       </main>
