@@ -1,24 +1,58 @@
-.border {
-    font-size: small;
-    font-weight: 100;
-    color: white;
-    padding-bottom: 1rem;
-    background-color: rgba(36, 36, 36, 0);
-}
+/* Page Title Styling */
 
-.col {
-    flex: 50%;
-}
-
-.sectTitle {
+#pageTitle {
     text-align: center;
-    font-size: 3rem;
+    color: white;
+    background-color: rgba(36, 36, 36, 1);
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
 }
 
-.shape {
-    border-bottom: 50px rgba(36, 36, 36, 0);
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	height: 0;
-	width: 100%;
+/* About Section Styling */
+
+.about {
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    display: inline;
+}
+
+.about p {
+    font-size: 1.5rem;
+}
+
+/* Quick Facts Styling */
+
+.quickFacts {
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    display: inline;
+    background-color: rgb(213, 213, 213);
+}
+
+.factsList {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Gallery Styling */
+
+.gallery {
+    width: 100%;
+    margin: 15px;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
+}
+
+.galleryImage {
+    width: 100%;
+    margin: 15px;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
 }
