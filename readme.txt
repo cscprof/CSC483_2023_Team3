@@ -1,6 +1,4 @@
-Website is currently running at
+Website is currently running at:
 
-mrhaydenn.us.to:3000
-
-this is temporary as next semester we want to pursue a more official solution
-like Azure or AWS.
+frontend (AZURE): https://experiencegeneva.azurewebsites.net/
+backend (AWS): http://52.1.104.203:8000/admin
