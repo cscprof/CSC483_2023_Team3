@@ -13,19 +13,20 @@ const Alex = () => {
         <JumboAlex />
       </header>
       <main>
-        <div id="pageTitle">
-          <h2>Alexander Hall</h2>
+        <div className="pageTitle">
+          <h1>Alexander Hall</h1>
         </div>
         <div className="about">
-          <p>Alexander Hall, situated at the heart of Geneva College, stands as a symbol of the institution's rich history and academic legacy. Originally constructed in [year], this architectural masterpiece has been a witness to generations of students, faculty, and countless milestones in the college's journey.</p>
-          <p>The hall is named after [Name], one of the founding figures of Geneva College, whose vision and dedication played a pivotal role in shaping the institution. With its timeless design and central location on campus, Alexander Hall continues to serve as a hub for academic, cultural, and social activities.</p>
+          <p>Alexander Hall is home to the main dining facility on campus, as well as the Admissions and Institutional Advancement Offices. Alexander Dining Hall was renovated in the summer of 2014, and includes a wide variety of food offerings.</p>
+          <p>Students, staff and faculty members often mingle and fellowship around tables in the dining hall, and large windows overlooking campus make it an inviting place to eat, converse or study.</p>
         </div>
         <div className="quickFacts">
           <ul className="factsList">
-            <li>Founded in [Year]</li>
-            <li>Named after [Name]</li>
-            <li>Historical Signifigance</li>
-            <li>Notable Alumni</li>
+            <h2>Quick Facts</h2>
+            <li>Renovated in 2014</li>
+            <li>Serves dishes from areas top chef, Tom</li>
+            <li>Geneva College's primary Dining Hall</li>
+            <li>Features a self-serve Ice Cream bar</li>
           </ul>          
         </div>
         <div className="gallery">

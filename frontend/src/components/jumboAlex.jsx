@@ -7,6 +7,8 @@ const JumboAlex = () => {
         <div className = "wrap">
             <div className="jumboAlex">
                   {/* <h1>Alexander Hall</h1> */}
+                <div className="shapeLeft"></div>
+                <div className="shapeRight"></div>
             </div> 
         </div>
     )
