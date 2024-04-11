@@ -9,7 +9,7 @@ import Home from "./components/home";
 import Help from "./components/help";
 import Events from "./components/events";
 import Profile from "./components/profile";
-import OldMain from './components/Buildings/oldmain.jsx';
+import OldMain from './components/Buildings/oldMain.jsx';
 import Trivia from "./components/trivia";
 import Upload from "./components/upload";
 import Reviews from "./components/reviews";
@@ -35,6 +35,7 @@ import JumboAthletics from './components/jumboAthletics.jsx';
 import JumboRapp from './components/jumboRapp.jsx';
 import JumboStudentCenter from './components/jumboStudentCenter.jsx';
 import JumboSandE from './components/jumboSandE.jsx';
+import Gallery from './components/gallery.jsx';
 
 
 
@@ -88,6 +89,8 @@ const App = () => {
         <Route path='/Sports' element={<Sports />} />
 
         <Route path='/Studentcenter' element={<Studentcenter />} />
+
+        <Route path='/Gallery' element={<Gallery />} />
       </Routes>
     </Router>
   );
