@@ -23,6 +23,9 @@ __pycache__/
 # production
 /build
 
+# eslint cache
+.eslintcache
+
 # misc
 .DS_Store
 .env.local

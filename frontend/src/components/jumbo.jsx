@@ -36,8 +36,9 @@ const Jumbo = () => {
                     </div>
                 </Carousel.Item>
             </Carousel> 
+            {/* <div className="shapeLeft"></div>
+            <div className="shapeRight"></div> */}
         </div> 
-        
     )
 }
 

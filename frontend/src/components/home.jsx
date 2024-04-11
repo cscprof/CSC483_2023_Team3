@@ -16,6 +16,9 @@ const Home = () => {
                 <div id="mapTitle">
                     <h2>Interactive Map</h2>
                 </div>
+                {/* <div className="pageTitle">
+                    <h1>Interactive Map</h1>
+                </div> */}
                 <section className="map">
                     <div className="map-container">
                         <NavLink to="/oldmain">
