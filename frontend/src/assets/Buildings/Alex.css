@@ -8,7 +8,7 @@
 /* Display Styling */
 
 .container {
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -33,7 +33,7 @@
 /* Quick Facts Styling */
 
 .quickFacts {
-    padding: 50px;
+    padding: 15px;
 }
 
 .factsList {
@@ -56,8 +56,10 @@
 /* Gallery Styling */
 
 .gallery {
-    margin: 0px;
+    height: 100%;
+    margin: 70px auto auto auto;
     padding: 15px;
+    display: inline-block;
 }
 
 .galleryImage {
