@@ -7,6 +7,10 @@
 backend/venv
 backend/backend/app/
 backend/cd
+
+#temp
+backend/
+
 # testing
 /coverage
 #stupid venv file
