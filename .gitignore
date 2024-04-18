@@ -36,3 +36,5 @@ __pycache__/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.git-rewrite/t/frontend/node_modules
+/.git-rewrite/t/frontend/node_modules
