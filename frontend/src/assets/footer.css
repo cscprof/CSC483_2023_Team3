@@ -1,30 +1,15 @@
 .desc {
-    font-size: small;
-    font-weight: 100;
-    color: white;
-    padding-bottom: 1rem;
-    background-color: #353434;
-}
-
-.link a {
-    font-size: large;
-    color: white;
-}
-
-.link a:hover {
-    color: black;
-    background-color: gold;
+    font-size: .75rem;
+    color: rgba(36, 36, 36, 36);
+    padding-top: 70px;
 }
 
 .Footer {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    background-color: #353434;
     justify-content: center;
     text-align: center;
-    height: 6rem;
+    height: 7rem;
     width: 100%;
-    margin: auto 0;
+    margin: auto;
 
     @media (max-width: 768px) {
     }

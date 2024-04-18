@@ -10,20 +10,15 @@ const Home = () => {
             <header>
                 <Navbar />
                 <Jumbo />
+                <div className="shapeLeft"></div>
+                <div className="shapeRight"></div>
             </header>
             <main>
-
-                <div id="mapTitle">
-                    <h2>Interactive Map</h2>
-                </div>
-                {/* <div className="pageTitle">
+                <div className="pageTitle">
                     <h1>Interactive Map</h1>
-                </div> */}
+                </div>
                 <section className="map">
                     <div className="map-container">
-                        <NavLink to="/oldmain">
-                            <button className="oldMain-button"></button>
-                        </NavLink>
                         <NavLink to="/Library">
                             <button className="library-button"></button>
                         </NavLink>
@@ -49,11 +44,14 @@ const Home = () => {
                         <NavLink to="/Northwood">
                             <button className="wood-button"></button>
                         </NavLink>
-                        <NavLink to="/SandE">
-                            <button className="sande-button"></button>
+                        <NavLink to="/Music">
+                            <button className="music-button"></button>
                         </NavLink>
                         <NavLink to="Studentcenter">
                             <button className="studentcenter-button"></button>
+                        </NavLink>
+                        <NavLink to="/SandE">
+                            <button className="sande-button"></button>
                         </NavLink>
                         <NavLink to="/Sports">
                             <button className="methany-button"></button>
@@ -65,9 +63,8 @@ const Home = () => {
                         <NavLink to="/Rapp">
                             <button className="rapp-button"></button>
                         </NavLink>
-
-                        <NavLink to="/Music">
-                            <button className="music-button"></button>
+                        <NavLink to="/oldmain">
+                            <button className="oldMain-button"></button>
                         </NavLink>
                     </div>
                 </section>

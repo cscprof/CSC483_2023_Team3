@@ -5,11 +5,8 @@ const Footer = () => {
     return (
         <div className="Footer">
             <main>
-                <div className="link">
-                    <NavLink to="/help">Help</NavLink>
-                </div>
                 <div className="desc">
-                    <h5>Created By Zack Martin, Hayden Wheeler, & Carter Milroy</h5>
+                    Created By Zack Martin, Hayden Wheeler, & Carter Milroy
                 </div>
 
             </main>

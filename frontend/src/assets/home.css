@@ -1,22 +1,27 @@
-/* .jumbo {
-    text-align: center;
-    background-color: rgb(255, 192, 33);
-    padding: 1rem 0rem 1rem 0;
-    font-size: 2.25rem;
-    width: 100%;
-    color: white;
-    height: 300px;
-} */
-.jumbo {
-    @media (max-width: 768px) {
-        height: 150px;
+.shapeLeft {
+    background-color: white;
+    width: 50%;
+    height: 50px;
+    border-radius: 0px 45px 0px 0px;
+    position: absolute;
+    bottom: 0;
+}
 
-    }
+.shapeRight {
+	background-color: white;
+    width: 50%;
+    height: 50px;
+    border-radius: 45px 0px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .pageTitle {
     text-align: center;
     color: rgb(36, 36, 36);
+    margin: auto;
+    padding: 20px;
 }
 
 .map {
@@ -24,10 +29,10 @@
     background-image: url('./images/map.png');
     background-repeat: no-repeat;
     background-position: center center;
-    height: 750px;
+    height: 1000px;
     width: 100%;
     background-size: cover;
-    margin-bottom: 60px;
+    margin: 50px auto 60px auto;
 
     @media (max-width: 768px) {
         background-size: contain;
@@ -57,14 +62,14 @@
 
 .oldMain-button {
     position: absolute;
-    top: 30%;
+    top: 35.3%;
     left: 39.5%;
     background: url('./images/oldmain.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 11%;
-    width: 5.5%;
+    height: 9%;
+    width: 6.5%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -79,14 +84,14 @@
 
 .library-button {
     position: absolute;
-    top: 30%;
+    top: 35.8%;
     left: 29.5%;
     background: url('./images/library.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 12%;
-    width: 6%;
+    height: 9%;
+    width: 6.5%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -99,14 +104,14 @@
 
 .alex-button {
     position: absolute;
-    top: 46%;
+    top: 47.3%;
     left: 28%;
     background: url('./images/alex.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 18%;
-    width: 9%;
+    height: 14%;
+    width: 9.5%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -119,13 +124,13 @@
 
 .pierce-button {
     position: absolute;
-    top: 20%;
+    top: 26.8%;
     left: 16%;
     background: url('./images/pierce.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 20%;
+    height: 12%;
     width: 8%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
@@ -139,13 +144,13 @@
 
 .memorial-button {
     position: absolute;
-    top: 19%;
+    top: 27%;
     left: 26.5%;
     background: url('./images/memorial.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 13%;
+    height: 10%;
     width: 8%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
@@ -159,14 +164,14 @@
 
 .clarke-button {
     position: absolute;
-    top: 35%;
-    left: 17%;
+    top: 39.3%;
+    left: 17.8%;
     background: url('./images/clarke.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 15%;
-    width: 8%;
+    height: 10.5%;
+    width: 7.5%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -179,14 +184,14 @@
 
 .mckee-button {
     position: absolute;
-    top: 18%;
-    left: 36%;
+    top: 26%;
+    left: 35.8%;
     background: url('./images/mkcee.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 15%;
-    width: 7%;
+    height: 9%;
+    width: 7.5%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -199,14 +204,14 @@
 
 .apartments-button {
     position: absolute;
-    top: 95%;
-    left: 35%;
+    top: 84%;
+    left: 35.5%;
     background: url('./images/apartments.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 28%;
-    width: 17%;
+    height: 23%;
+    width: 16%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -219,14 +224,14 @@
 
 .wood-button {
     position: absolute;
-    top: 39.5%;
+    top: 42.8%;
     left: 46%;
     background: url('./images/northwood.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 12%;
-    width: 6.5%;
+    height: 10%;
+    width: 5.5%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -239,13 +244,13 @@
 
 .sande-button {
     position: absolute;
-    top: 28%;
-    left: 47%;
+    top: 34.8%;
+    left: 46.7%;
     background: url('./images/sande.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 15%;
+    height: 12%;
     width: 8.5%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
@@ -259,14 +264,14 @@
 
 .studentcenter-button {
     position: absolute;
-    top: 19%;
+    top: 28.5%;
     left: 44.5%;
     background: url('./images/sc1.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 18%;
-    width: 6%;
+    height: 12.8%;
+    width: 7%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -279,14 +284,14 @@
 
 .methany-button {
     position: absolute;
-    top: 39%;
+    top: 43.8%;
     left: 62%;
     background: url('./images/metheny.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 20%;
-    width: 10%;
+    height: 12.8%;
+    width: 11%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -299,14 +304,14 @@
 
 .softball-button {
     position: absolute;
-    top: 63.5%;
-    left: 74.25%;
+    top: 59%;
+    left: 74.15%;
     background: url('./images/softball.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 21%;
-    width: 11%;
+    height: 17%;
+    width: 10%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -319,14 +324,14 @@
 
 .track-button {
     position: absolute;
-    top: 68%;
+    top: 63.2%;
     left: 87%;
     background: url('./images/track.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 25%;
-    width: 17%;
+    height: 16%;
+    width: 15%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -339,14 +344,14 @@
 
 .football-button {
     position: absolute;
-    top: 52.5%;
-    left: 61%;
+    top: 53%;
+    left: 62%;
     background: url('./images/reeves.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 25%;
-    width: 18%;
+    height: 16%;
+    width: 14.2%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -359,14 +364,14 @@
 
 .baseball-button {
     position: absolute;
-    top: 74%;
-    left: 13%;
+    top: 70%;
+    left: 11%;
     background: url('./images/basebal.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 45%;
-    width: 27%;
+    height: 44%;
+    width: 29%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -379,13 +384,13 @@
 
 .rapp-button {
     position: absolute;
-    top: 32%;
+    top: 36.8%;
     left: 55%;
     background: url('./images/rapp.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 8%;
+    height: 6.5%;
     width: 4%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
@@ -399,14 +404,14 @@
 
 .music-button {
     position: absolute;
-    top: 20%;
-    left: 40.5%;
+    top: 28.8%;
+    left: 41%;
     background: url('./images/johnston.png') center no-repeat;
     background-size: 100% 100%;
     border: 2px solid #00000000;
     border-radius: 10px;
-    height: 8%;
-    width: 4%;
+    height: 6.5%;
+    width: 5%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
