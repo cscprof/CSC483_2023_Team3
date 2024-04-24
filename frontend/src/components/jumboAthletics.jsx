@@ -6,7 +6,8 @@ const JumboAthletics = () => {
     return (
         <div>
             <div className="jumboAthletics">
-                <h1>Athletics</h1>
+                <div className="shapeLeft"></div>
+                <div className="shapeRight"></div>
             </div> 
         </div>
     )

@@ -11,10 +11,12 @@ const Upload = () => {
             <header>
                 <Navbar />
                 <Jumbo />
+                <div className="shapeLeft"></div>
+                <div className="shapeRight"></div>
             </header>
             <main className="uploadFields">
-                <div className="subtitle">
-                    <h2>Upload</h2>
+            <div className="pageTitle">
+                    <h1>Upload Event</h1>
                 </div>
                 <div className="formsec">
                     <section className="eventForm">

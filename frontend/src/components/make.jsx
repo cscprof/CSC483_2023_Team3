@@ -282,11 +282,12 @@ const Make = () => {
             <header>
                 <Navbar />
                 <Jumbo />
+                <div className="shapeLeft"></div>
+                <div className="shapeRight"></div>
             </header>
             <main>
-                <div className="subtitle">
-                    <h2>Leave a Review!</h2>
-                    <h5>Spread the word!</h5>
+                <div className="pageTitle">
+                    <h1>Reviews</h1>
                 </div>
                 {submitted && <div className="success-message">Review submitted successfully!</div>}
                 <div className="makeBut">

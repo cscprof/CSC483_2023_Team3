@@ -49,7 +49,6 @@ const EventForm = () => {
 
   return (
     <div className='eventForm'>
-      <h2>Upload Event</h2>
       {submitted && <div className="success-message">Event submitted successfully!</div>}
       <form onSubmit={handleSubmit}>
         <div>

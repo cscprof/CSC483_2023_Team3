@@ -1,45 +1,63 @@
-.aboutP {
+/* Page Title Styling */
+
+.pageTitle {
+    text-align: center;
+    color: rgb(36, 36, 36);
+}
+
+/* Display Styling */
+
+.container {
+    margin: auto;
+    padding: 0;
+}
+
+.displayLeft, .displayRight {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+/* About Section Styling */
+
+.about {
+    padding: 75px;
+    margin: 0;
+}
+
+.about p {
     font-size: 1.5rem;
-    width: 1000px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    color: rgba(36, 36, 36, 1);
 }
 
-.col {
-    flex: 50%;
+/* Quick Facts Styling */
+
+.quickFacts {
+    padding: 15px;
 }
 
-.column {
-    display: flex;
-}
-
-#factList {
-    text-align: center;
-    font-size: 1.25rem;
-}
-
-#imgPlace {
-    text-align: center;
-}
-
-.jumboSC {
-    text-align: center;
-    align-content: center;
-    background-color: rgb(255, 192, 33);
-    padding: 1rem 0rem 1rem 0;
-    font-size: 2.25rem;
-    width: 100%;
-    color: white;
-    height: 300px;
-}
-
-.noteList {
-    text-align: center;
+.factsList {
+    list-style: circle;
+    padding: 25px 25px 25px 50px;
     font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36,36,36);
 }
 
-.sectTitle {
+.factsList h2 {
     text-align: center;
-    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Gallery Styling */
+
+.gallery {
+    height: 100%;
+    margin: 70px auto auto auto;
+    padding: 15px;
+    display: inline-block;
 }

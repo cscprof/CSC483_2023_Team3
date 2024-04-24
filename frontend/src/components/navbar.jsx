@@ -106,7 +106,7 @@ const Navbar = () => {
                             <NavLink to="/trivia">Trivia</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/reviews">Reviews</NavLink>
+                            <NavLink to="/make">Reviews</NavLink>
                         </li>
                         {isLoggedIn ? (
                             <li>

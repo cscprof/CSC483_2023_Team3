@@ -7,7 +7,8 @@ const JumboClarke = () => {
         <div>
             <div className="backgroundImage"></div>
             <div className="jumboClarke">
-                <h1>Our Residence Halls </h1>
+                <div className="shapeLeft"></div>
+                <div className="shapeRight"></div>
             </div> 
         </div>
     )

@@ -4,7 +4,8 @@ import '../assets/jumboRapp.css'
 const JumboRapp = () => {
     return (
         <div className="jumboRapp">
-            <h1>Rapp Center</h1>
+            <div className="shapeLeft"></div>
+            <div className="shapeRight"></div>
         </div> 
     )
 }

@@ -4,7 +4,8 @@ import '../assets/jumboOldMain.css'
 const JumboOldMain = () => {
     return (
         <div className="jumboOldMain">
-            <h1>Old Main</h1>
+            <div className="shapeLeft"></div>
+            <div className="shapeRight"></div>
         </div> 
     )
 }

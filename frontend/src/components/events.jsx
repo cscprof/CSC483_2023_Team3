@@ -11,10 +11,12 @@ const Events = () => {
             <header>
                 <Navbar />
                 <Jumbo />
+                <div className="shapeLeft"></div>
+                <div className="shapeRight"></div>
             </header>
             <main>
-                <div className="subtitle">
-                    <h2>Events</h2>
+                <div className="pageTitle">
+                    <h1>Events</h1>
                 </div>
                 <section className="tableCont">
                     <Table />

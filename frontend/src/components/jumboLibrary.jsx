@@ -4,7 +4,8 @@ import '../assets/jumboLibrary.css'
 const JumboLibrary = () => {
     return (
         <div className="jumboLibrary">
-            <h1>McCartney Library</h1>
+            <div className="shapeLeft"></div>
+            <div className="shapeRight"></div>
         </div> 
     )
 }

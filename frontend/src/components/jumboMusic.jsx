@@ -4,7 +4,8 @@ import '../assets/jumboMusic.css'
 const JumboMusic = () => {
     return (
         <div className="jumboMusic">
-            <h1>Johnston Gym</h1>
+            <div className="shapeLeft"></div>
+            <div className="shapeRight"></div>
         </div> 
     )
 }

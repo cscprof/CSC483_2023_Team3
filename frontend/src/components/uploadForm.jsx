@@ -131,7 +131,7 @@ const UploadForm = () => {
   
     return (
       <div className='uploadForm'>
-        <h2>Upload Image</h2>
+        <h1 className='pageTitle'>Upload Image</h1>
         {submitted && <div className="success-message">Upload submitted successfully!</div>}
         <form onSubmit={handleSubmit}>
           <div>

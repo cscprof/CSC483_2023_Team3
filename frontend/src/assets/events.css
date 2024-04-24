@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400&display=swap');
 
+.shapeLeft {
+    background-color: white;
+    width: 50%;
+    height: 50px;
+    border-radius: 0px 45px 0px 0px;
+    position: absolute;
+    bottom: 0;
+}
 
-.subtitle {
+.shapeRight {
+	background-color: white;
+    width: 50%;
+    height: 50px;
+    border-radius: 45px 0px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.pageTitle {
     text-align: center;
-    font-size: 1.25rem;
-    color: white;
-    background-color: #353434;
-    padding: .2rem 0rem .2rem 0rem;
-    width: 100%;
+    color: rgb(36, 36, 36);
+    margin: auto;
+    padding: 20px;
 }
 
 .tableCont {

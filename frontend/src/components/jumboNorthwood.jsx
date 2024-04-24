@@ -4,7 +4,8 @@ import '../assets/jumboNorthwood.css'
 const JumboNorthwood = () => {
     return (
         <div className="jumboNorthwood">
-            <h1>Northwood Hall</h1>
+            <div className="shapeLeft"></div>
+            <div className="shapeRight"></div>
         </div> 
     )
 }

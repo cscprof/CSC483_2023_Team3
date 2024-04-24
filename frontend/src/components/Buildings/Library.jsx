@@ -6,53 +6,48 @@ import JumboLibrary from "../jumboLibrary";
 const Library = () => {
   return (
     <div className="Library">
-      <header>
-        <Navbar />
-        <JumboLibrary />
-      </header>
-      <main>
-        <div className="about">
-          <h1 className="sectTitle">About</h1>
-          <p className="aboutP">
-            Welcome to McCartney Library, a hub of knowledge and exploration at Geneva College. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis risus, vitae feugiat quam interdum in. Nulla facilisi. Duis et turpis euismod, efficitur ligula vel, malesuada justo. Sed in purus nec tellus pharetra efficitur. In hac habitasse platea dictumst. Aenean tincidunt est eu odio laoreet, ut elementum sem laoreet. Nulla facilisi. Integer sagittis cursus massa, non consequat sapien ultricies at. Sed nec eros sit amet urna varius cursus. Proin euismod eros id purus vehicula, vitae dictum metus feugiat. Nulla facilisi. Morbi eu diam vitae libero tincidunt tristique. Curabitur nec euismod urna. Mauris sit amet egestas velit.
-          </p>
+    <header>
+      <Navbar />
+      <JumboLibrary />
+    </header>
+    <main>
+      <div className="pageTitle">
+        <h1>McCartney Library</h1>
+      </div>
+      <div className="container">
+        <div className="displayLeft">
+          <div className="about">
+            <p>Welcome to McCartney Library, a hub of knowledge and exploration at Geneva College.
+            </p>
+            <p>The library boasts an exstensive collection of written and digital works. Students
+              often visit the homey nooks and crannies of the library to do homework, read, and prepare
+              for classes. The library also hosts events such as the Academic partners lectures, as well
+              as the Work of Our Hands series. 
+            </p>
+          </div>          
         </div>
-        <div className="funFacts">
-          <div className="column">
-            <div className="col">
-              <h1 className="sectTitle">Notable Features</h1>
-              <ul className="noteList">
-                <li>Architectural Beauty: McCartney Library boasts stunning architectural design, creating a welcoming and inspiring space for students.</li>
-                <li>Extensive Collection: With over [number] volumes, the library houses a vast collection of books, journals, and multimedia resources.</li>
-                <li>Modern Technology: Equipped with state-of-the-art technology, the library provides a contemporary and efficient learning environment.</li>
-                <li>Study Spaces: Various study areas cater to different learning preferences, including quiet zones and collaborative spaces.</li>
-              </ul>
-            </div>
-            <div className="col" id="imgPlace">
-              <img src="https://www.geneva.edu/campusmap/_assets/images/bld-library-2.jpg" alt="placeholder"></img>
+        <div className="displayRight">
+          <div className="gallery">
+            <div className="galleryImage">
+                <img src="https://www.geneva.edu/campusmap/_assets/images/bld-library-1.jpg" alt="McCartney Library"></img>
             </div>
           </div>
-        </div>
-        <div className="notable">
-          <h1 className="sectTitle">Fun Facts!</h1>
-          <ul id="factList">
-            <li>Established In: [Year]</li>
-            <li>Named After: [Full Name of the Person]</li>
-            <li>Library Hours: [Operating Hours]</li>
-            <li>Special Collections: [Any special collections or unique features]</li>
-          </ul>
-        </div>
-        <div className="gallery">
-          <h1 className="sectTitle">Gallery</h1>
-          <div>
-            <center><p>Photo Area Here</p></center>
+          <div className="quickFacts">
+            <ul className="factsList">
+              <h2>Quick Facts</h2>
+              <li>Offers a variety of seating, including, beanbags!</li>
+              <li>Boasts multiple historic collections</li>
+              <li>Has lots of books</li>
+              <li>Has a bell tower that alerts the entire town of the hour</li>
+            </ul>
           </div>
         </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+      </div>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+  </div>
   );
 };
 

@@ -90,12 +90,13 @@ const Trivia = () => {
             <header>
                 <Navbar />
                 <Jumbo />
-                <div className="subtitle">
-                    <h2>Trivia</h2>
-                </div>
+                <div className="shapeLeft"></div>
+                <div className="shapeRight"></div>
             </header>
-
             <main>
+            <div className="pageTitle">
+                    <h1>Trivia</h1>
+                </div>
                 <div className="woah">
                     <h1 className="title">Test Your Geneva Knowledge!</h1>
                     <div className="imgMove">

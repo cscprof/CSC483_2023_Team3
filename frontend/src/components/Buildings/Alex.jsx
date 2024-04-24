@@ -19,8 +19,15 @@ const Alex = () => {
         <div className="container">
           <div className="displayLeft">
             <div className="about">
-              <p>Alexander Hall is home to the main dining facility on campus, as well as the Admissions and Institutional Advancement Offices. Alexander Dining Hall was renovated in the summer of 2014, and includes a wide variety of food offerings.</p>
-              <p>Students, staff and faculty members often mingle and fellowship around tables in the dining hall, and large windows overlooking campus make it an inviting place to eat, converse or study.</p>
+              <p>Alexander Hall is home to the main dining facility on campus, 
+                as well as the Admissions and Institutional Advancement Offices. 
+                Alexander Dining Hall was renovated in the summer of 2014, and 
+                includes a wide variety of food offerings.
+              </p>
+              <p>Students, staff and faculty members often mingle and fellowship 
+                around tables in the dining hall, and large windows overlooking 
+                campus make it an inviting place to eat, converse or study.
+              </p>
             </div>          
           </div>
           <div className="displayRight">

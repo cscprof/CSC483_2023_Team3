@@ -36,13 +36,17 @@ const Reviews = () => {
             <header>
                 <Navbar />
                 <Jumbo />
+                <div className="shapeLeft"></div>
+                <div className="shapeRight"></div>
             </header>
-            <main id="reviewMain">
-                <div className="subtitle" id="revBut">
-                    <h2>Reviews</h2>
+            <main>
+                <div className="pageTitle">
+                    <h1>Reviews</h1>
+                </div>
+                <div id="revBut">
                     {isLoggedIn ? (
                         <NavLink to="/make">
-                            <button className="btn btn-lg dark text-warning btn-outline-warning">Leave a Review!</button>
+                            <button className="btn btn-lg bg-secondary text-warning btn btn-outline-warning">Leave a Review!</button>
                         </NavLink>) : ("")
                     }
                 </div>

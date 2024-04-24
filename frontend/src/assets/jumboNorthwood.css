@@ -1,16 +1,35 @@
 .jumboNorthwood {
-    text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    padding: 15rem;
     background-image: -webkit-linear-gradient(0deg, rgba(36,36,36, 0) 0%, rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/bld-northwood-6-3812153397.jpg);
     background-image:  -moz-linear-gradient(0deg, rgba(36,36,36, 0) 0%, rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/bld-northwood-6-3812153397.jpg);
     background-image:  -o-linear-gradient(0deg, rgba(36,36,36, 0) 0%, rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/bld-northwood-6-3812153397.jpg);
     background-image:  -ms-linear-gradient(0deg, rgba(36,36,36, 0) 0%, rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/bld-northwood-6-3812153397.jpg);
     background-image:  linear-gradient(0deg, rgba(36,36,36, 0) 0%, rgba(36,36,36, 0) 50%, rgba(36,36,36, 1) 100%), url(images/bld-northwood-6-3812153397.jpg);
+    background-color: black;
     background-size: 100%;
-    background-position: bottom;
+    background-position: center;
     width: 100%;
     color: rgb(255, 255, 255);
-    height: 400px;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.shapeLeft {
+	background-color: white;
+    width:50%;
+    padding: 0;
+    margin: 0;
+    float: left;
+    height: 100px;
+    border-radius: 0px 75px 0px 0px;
+}
+
+.shapeRight {
+	background-color: white;
+    width:50%;
+    float: right;
+    height: 100px;
+    border-radius: 75px 0px 0px 0px;
 }

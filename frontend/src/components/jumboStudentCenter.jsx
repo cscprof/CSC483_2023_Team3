@@ -4,7 +4,8 @@ import '../assets/jumboStudentCenter.css'
 const JumboStudentCenter = () => {
     return (
         <div className="jumboStudentCenter">
-            <h1>Student Center</h1>
+            <div className="shapeLeft"></div>
+            <div className="shapeRight"></div>
         </div> 
     )
 }
